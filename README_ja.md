@@ -20,6 +20,16 @@ A10-RPTは **feasibility-diagnostic control theory** として扱うのが安全
 
 実エンジン性能を予測するものではない。
 
+## 技術的ビジュアル案内
+
+初めて本リポジトリを見る技術的関心のある読者向けに、ブラウザだけで開ける技術的ビジュアル案内ページを同梱しています。
+
+`docs/technical_visual_orientation/index.html`
+
+このページは、A10-RPT の構造、すなわち project mission variable、reduced-model / surrogate としての位置づけ、structured-prior / constrained-evaluation logic、不確実性・stress discipline、evidence hierarchy、リポジトリ閲覧順、および claim boundary を短く整理するための補助資料です。
+
+このページは説明補助であり、simulation を実行するものではありません。プロジェクトの妥当性、実装可能性、商用展開、安全認証、または実験・臨床・産業上の検証を示すものでもなく、論文本体、source/configuration materials、supporting archive materials、または専門家による独立評価を置き換えるものでもありません。
+
 ## 含まれるもの
 
 - 論文PDF
