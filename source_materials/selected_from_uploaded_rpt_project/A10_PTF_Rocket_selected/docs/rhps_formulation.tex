@@ -1,0 +1,387 @@
+%========================================================
+% Reviewer-guided reformulation for A10-PTF (Phase 1: RHPS)
+%========================================================
+
+\subsection{Reviewer-guided reformulation of the RHPS model}
+\label{subsec:rhps_reformulation}
+
+To obtain a mathematically closed reduced-order model suitable for optimization,
+we explicitly separate prognostic states from diagnostic observables.
+The reduced RHPS state is defined by
+\begin{equation}
+x(t)=
+\begin{bmatrix}
+a(t)\\
+z_f(t)\\
+z_N(t)\\
+\eta(t)
+\end{bmatrix},
+\label{eq:rhps_state}
+\end{equation}
+where
+$a(t)\in\mathbb{R}^{2N_a}$ is the retained acoustic modal state,
+$z_f(t)\in\mathbb{R}^{N_f}$ is an internal flame-memory state,
+$z_N(t)\in\mathbb{R}^{N_N}$ is a causal nozzle-memory state,
+and $\eta(t)\in\mathbb{R}^{N_\eta}$ is a slow thermochemical state
+(e.g.\ mean mixture, mean temperature, and mean mass-flow coordinates).
+
+The reduced dynamics are written as
+\begin{align}
+\dot a
+&=
+A_a(\theta,\eta)\,a
++
+B_f(\theta,\eta)\,y_f
++
+B_N(\theta,\eta)\,y_N
++
+B_u(\theta,\eta)\,u
++
+\mathcal{N}_a(a,z_f,z_N,\eta,u;\theta),
+\label{eq:rhps_a}
+\\
+\dot z_f
+&=
+A_f(\eta)\,z_f
++
+B_{fa}(\eta)\,a
++
+B_{fu}(\eta)\,u
++
+\mathcal{N}_f(a,z_f,\eta,u;\theta),
+\label{eq:rhps_zf}
+\\
+\dot z_N
+&=
+A_N(\eta)\,z_N
++
+B_{Np}(\eta)\,p_c'(a)
++
+\mathcal{N}_N(z_N,p_c'(a);\eta),
+\label{eq:rhps_zn}
+\\
+\dot\eta
+&=
+f_\eta(\eta,\bar T,\bar\phi,\bar{\dot m};u,\theta),
+\label{eq:rhps_eta}
+\end{align}
+with outputs
+\begin{equation}
+y_f = C_f(\eta)\,z_f + D_f(\eta)\,a,
+\qquad
+y_N = C_N(\eta)\,z_N + D_N(\eta)\,p_c'(a).
+\label{eq:rhps_outputs}
+\end{equation}
+Here, $\theta$ denotes the uncertain operating and forcing parameters.
+
+\paragraph{Causal nozzle-memory realization.}
+Instead of a formal nonlinear convolution written directly at the boundary,
+we realize the nozzle response through the stable finite-dimensional state $z_N$.
+In the linearized limit,
+\begin{equation}
+K_N(t;\eta)=C_N(\eta)\,e^{A_N(\eta)t}\,B_{Np}(\eta),
+\qquad
+\Re \lambda_i(A_N)<0
+\ \ \forall i,
+\label{eq:nozzle_kernel}
+\end{equation}
+so that the associated kernel is causal and exponentially decaying.
+This gives a realizable boundary memory model while preserving a state-space form
+for optimization and adjoint differentiation.
+
+\subsection{TDHR as a regularized diagnostic observable}
+\label{subsec:tdhr_regularized}
+
+The proposed topological discontinuity of heat release (TDHR) is not introduced as a
+literal discontinuity or as a prognostic state.
+Instead, it is treated as a \emph{regularized diagnostic field} defined on the flame sheet
+or on a thin reaction zone $\Gamma_f(t)$.
+Let $\dot q_\sigma$ denote a filtered heat-release field and let
+\begin{equation}
+S_\kappa(s)=\frac{1}{2}\left(1+\tanh(\kappa s)\right)
+\label{eq:smooth_switch}
+\end{equation}
+be a smooth switching function.
+We define the TDHR indicator
+\begin{equation}
+\chi_{\mathrm{TDHR}}(x,t)
+=
+S_\kappa\!\left(\|\nabla_{\Gamma}\dot q_\sigma\|-\xi_q\right)
+\,
+S_\kappa\!\left(\xi_H-\det H_{\Gamma}(\dot q_\sigma)\right),
+\label{eq:tdhr_indicator}
+\end{equation}
+where $\nabla_{\Gamma}$ and $H_{\Gamma}$ are the surface gradient and surface Hessian
+restricted to $\Gamma_f(t)$, respectively, and $\xi_q,\xi_H>0$ are detection thresholds.
+
+The retained modal TDHR diagnostic is then defined by
+\begin{equation}
+D_n^{\mathrm{TDHR}}(t)
+=
+\int_{\Gamma_f(t)}
+p_n^\dagger(x)\,
+\chi_{\mathrm{TDHR}}(x,t)\,
+\dot q'(x,t)\,dA,
+\qquad n=1,\dots,N_a,
+\label{eq:tdhr_modal}
+\end{equation}
+where $p_n^\dagger$ is the adjoint pressure (or adjoint acoustic potential)
+associated with the $n$th retained thermoacoustic mode.
+Equation~\eqref{eq:tdhr_modal} ensures that TDHR is interpreted only as a
+mode-weighted precursor diagnostic.
+It is \emph{not} taken as the primary stability functional.
+
+To monitor whether TDHR is actually informative, we define the mismatch
+\begin{equation}
+\varepsilon_{\mathrm{TDHR},n}
+=
+\left|
+D_n^{\mathrm{TDHR}}
+-
+\mathcal{R}_n^\dagger
+\right|,
+\qquad
+\mathcal{R}_n^\dagger
+=
+\frac{1}{T_p}
+\int_0^{T_p}
+\int_{\Omega_f}
+p_n^\dagger(x)\,\dot q'(x,t)\,dV\,dt,
+\label{eq:tdhr_mismatch}
+\end{equation}
+where $\mathcal{R}_n^\dagger$ is the period-averaged adjoint-weighted Rayleigh source term.
+If $\varepsilon_{\mathrm{TDHR},n}$ remains large over the training or validation set,
+TDHR must be interpreted as a weak correlate rather than a control-relevant indicator.
+
+\subsection{Replacement of the thermodynamic line functional}
+\label{subsec:replace_Fth}
+
+The line functional
+\begin{equation}
+\mathcal{F}_{th}=\oint_\Gamma \left(\dot S_{gen}-\Psi_{sub}\right)\,d\gamma
+\end{equation}
+is not adopted as a stability functional.
+Instead, entropy generation and subgrid penalties are separated and assigned distinct roles:
+\begin{align}
+\mathcal{S}_{gen}(u;\theta)
+&=
+\int_0^T\int_{\Omega}
+\dot s_{gen}(x,t;u,\theta)\,dV\,dt,
+\label{eq:Sgen}
+\\
+\mathcal{P}_{sub}(u;\theta)
+&=
+\int_0^T
+\Psi_{sub}(t;u,\theta)\,dt.
+\label{eq:Psub}
+\end{align}
+The first is a thermodynamic regularizer; the second is an explicit model-discrepancy penalty.
+Neither is identified with the thermoacoustic growth rate itself.
+
+The optimization objective is written as
+\begin{equation}
+J(u)
+=
+(1-\lambda)\,\mathbb{E}_{\theta}\!\left[\mathcal{J}(u;\theta)\right]
++
+\lambda\,\mathrm{CVaR}_\beta\!\left(\mathcal{J}(u;\theta)\right),
+\label{eq:outer_risk}
+\end{equation}
+with sample cost
+\begin{align}
+\mathcal{J}(u;\theta)
+&=
+\int_0^T
+\Big[
+w_p \|p'(t)\|_2^2
++
+w_q \|\dot q'(t)\|_2^2
++
+w_{sub}\,\Psi_{sub}(t)
++
+w_S\,\dot{\mathcal{S}}_{gen}(t)
++
+w_u \|u(t)\|_2^2
++
+w_{\dot u}\|\dot u(t)\|_2^2
+\Big]\,dt
+\nonumber\\
+&\quad
++
+w_{\mathrm{fail}}
+\int_0^T
+\mathcal{H}_\epsilon\!\left(g_{\mathrm{fail}}(x(t),\theta)\right)\,dt,
+\label{eq:sample_cost}
+\end{align}
+where $\mathcal{H}_\epsilon$ is a smooth approximation of the Heaviside function
+and $g_{\mathrm{fail}}$ encodes mission-level failure metrics
+(e.g.\ pressure exceedance, wall-heat exceedance, or blowout proximity).
+
+Thermoacoustic stabilization is enforced not by minimizing
+$\mathcal{S}_{gen}$ directly, but by explicit stability constraints.
+For an equilibrium or weakly nonlinear operating point,
+\begin{equation}
+\Re\lambda_j\!\left(\mathcal{L}(x^\star,u,\theta)\right)\le -\delta_j,
+\qquad
+j=1,\dots,N_r,
+\label{eq:stability_constraint_linear}
+\end{equation}
+where $\mathcal{L}$ is the linearized RHPS operator and $\delta_j>0$ is a prescribed margin.
+Near a periodic orbit, this is replaced by the adjoint-weighted acoustic-energy condition
+\begin{equation}
+\overline{\mathcal{R}_j^\dagger}
+\le
+\overline{\mathcal{D}_j}
+-\delta_j,
+\qquad
+j=1,\dots,N_r,
+\label{eq:stability_constraint_periodic}
+\end{equation}
+where $\overline{\mathcal{D}_j}$ denotes the corresponding averaged damping contribution.
+
+\subsection{Adjoint-consistent differentiation and numerical admissibility}
+\label{subsec:adjoint_admissibility}
+
+Gradients are computed from the \emph{fully discretized} RHPS model.
+Let the one-step discretization be
+\begin{equation}
+x_{k+1}=\Phi_{\Delta t}(x_k,u_k,\theta).
+\label{eq:discrete_map}
+\end{equation}
+The discrete adjoint is then
+\begin{equation}
+\lambda_k
+=
+\left(\partial_{x_k}\Phi_{\Delta t}\right)^\top \lambda_{k+1}
++
+\partial_{x_k}\ell_k,
+\qquad
+\lambda_N=\partial_{x_N}\ell_N,
+\label{eq:discrete_adjoint}
+\end{equation}
+with gradient
+\begin{equation}
+\frac{dJ}{du_k}
+=
+\partial_{u_k}\ell_k
++
+\left(\partial_{u_k}\Phi_{\Delta t}\right)^\top \lambda_{k+1}.
+\label{eq:discrete_gradient}
+\end{equation}
+
+To preserve differentiability, the following replacements are mandatory:
+\begin{enumerate}
+\item hard thresholds $\rightarrow$ smooth switches $S_\kappa(\cdot)$,
+\item $\max(\cdot)$ $\rightarrow$ log-sum-exp or softplus approximations,
+\item event counts $\rightarrow$ mollified event densities,
+\item absolute values $\rightarrow$ $(x^2+\epsilon^2)^{1/2}$ regularizations where needed.
+\end{enumerate}
+
+The discrete adjoint is accepted only if it passes a Taylor remainder test of the form
+\begin{equation}
+\left|
+J(u+\alpha \delta u)-J(u)-\alpha \nabla J(u)^\top \delta u
+\right|
+=
+\mathcal{O}(\alpha^2)
+\qquad
+(\alpha\to 0).
+\label{eq:taylor_test}
+\end{equation}
+
+\paragraph{Adjoint breakdown criterion.}
+The standard backward adjoint is not used indiscriminately.
+It is declared numerically inadmissible whenever at least one of the following holds:
+\begin{align}
+\max_{1\le j\le N_r}\Re\lambda_j(\mathcal{L}) &\ge -\epsilon_H,
+\label{eq:hopf_margin}
+\\
+T_{\mathrm{opt}} &> c_\Lambda\,\Lambda_1^{-1},
+\label{eq:lyapunov_limit}
+\\
+\mathrm{cond}\!\left(I-\partial_x\Phi_T\right) &> \kappa_{\max},
+\label{eq:condition_number_limit}
+\end{align}
+where $\epsilon_H>0$ is a Hopf-margin tolerance,
+$\Lambda_1$ is the maximal finite-time Lyapunov exponent of the reduced model,
+and $c_\Lambda=\mathcal{O}(1)$ is a chosen safety constant.
+
+If any of \eqref{eq:hopf_margin}--\eqref{eq:condition_number_limit} is triggered,
+the optimization is switched from a global unsteady adjoint to one of the following:
+\begin{enumerate}
+\item a short-horizon receding-horizon adjoint,
+\item a periodic-orbit continuation / Floquet sensitivity calculation,
+\item a shadowing-type sensitivity estimator for long-time averaged objectives.
+\end{enumerate}
+
+\subsection{Claim hierarchy}
+\label{subsec:claim_hierarchy_rhps}
+
+The revised RHPS formulation is deliberately modest in scope.
+It does not claim first-principles closure of the full reactive Navier--Stokes system.
+It claims a control-oriented, uncertainty-aware, and adjoint-compatible
+intermediate surrogate in which
+\begin{enumerate}
+\item local topological flame events are treated diagnostically rather than prognostically,
+\item stability is enforced through modal growth or adjoint-weighted energy constraints,
+\item nozzle history dependence is represented by a realizable causal memory state,
+\item the optimization objective is risk-aware and explicitly penalizes subgrid-model fragility.
+\end{enumerate}
+Within this restricted scope, RHPS becomes mathematically better posed for optimization,
+calibration, and uncertainty propagation than the original TDHR--$\mathcal{F}_{th}$ formulation.
+
+\begin{thebibliography}{99}
+
+\bibitem{YoshimuraUAPST2026}
+K.~Yoshimura,
+\newblock \emph{Uncertainty-Aware Planetary Shield Theory (UAPST):
+A Closed Intermediate Surrogate for Tail-Risk-Aware Hybrid Control of Planetary Magnetic Shielding},
+\newblock independent manuscript, 2026.
+
+\bibitem{Magri2019}
+L.~Magri, M.~P.~Juniper, and J.~Moeck,
+\newblock Sensitivity of the Rayleigh criterion in thermoacoustics,
+\newblock \emph{Journal of Fluid Mechanics}, \textbf{882}, R1, 2020.
+\newblock doi:10.1017/jfm.2019.860
+
+\bibitem{Durox2009}
+D.~Durox, T.~Schuller, N.~Noiray, A.~L.~Birbaud, and S.~Candel,
+\newblock Rayleigh criterion and acoustic energy balance in unconfined self-sustained oscillating flames,
+\newblock \emph{Combustion and Flame}, \textbf{156}(1), 106--119, 2009.
+\newblock doi:10.1016/j.combustflame.2008.07.016
+
+\bibitem{Juniper2018}
+M.~P.~Juniper,
+\newblock Sensitivity Analysis of Thermoacoustic Instability with Adjoint Helmholtz Solvers,
+\newblock \emph{Physical Review Fluids}, \textbf{3}(11), 110509, 2018.
+\newblock doi:10.1103/PhysRevFluids.3.110509
+
+\bibitem{Illingworth2012}
+S.~J.~Illingworth, I.~C.~Waugh, and M.~P.~Juniper,
+\newblock Finding thermoacoustic limit cycles for a ducted Burke-Schumann flame,
+\newblock \emph{Proceedings of the Combustion Institute}, \textbf{34}(1), 911--920, 2013.
+\newblock doi:10.1016/j.proci.2012.06.017
+
+\bibitem{Waugh2013}
+I.~Waugh, S.~Illingworth, and M.~Juniper,
+\newblock Matrix-free continuation of limit cycles for bifurcation analysis of large thermoacoustic systems,
+\newblock \emph{Journal of Computational Physics}, \textbf{240}, 225--247, 2013.
+\newblock doi:10.1016/j.jcp.2012.12.034
+
+\bibitem{Nguyen1988}
+T.~V.~Nguyen,
+\newblock \emph{Computer Code for the Prediction of Nozzle Admittance},
+\newblock technical report N90-28630, Aerojet TechSystems Company, 1988.
+
+\bibitem{Padmanabhan1975}
+M.~S.~Padmanabhan, E.~A.~Powell, and B.~T.~Zinn,
+\newblock \emph{Effect of Nozzle Nonlinearities Upon Nonlinear Stability of Liquid Propellant Rocket Motors},
+\newblock NASA CR-134880, 1975.
+
+\bibitem{Ni2019}
+A.~Ni, Q.~Wang, P.~Fernandez, and C.~Talnikar,
+\newblock Sensitivity analysis on chaotic dynamical systems by Finite Difference Non-Intrusive Least Squares Shadowing (FD-NILSS),
+\newblock \emph{Journal of Computational Physics}, \textbf{394}, 615--631, 2019.
+\newblock doi:10.1016/j.jcp.2019.06.004
+
+\end{thebibliography}
