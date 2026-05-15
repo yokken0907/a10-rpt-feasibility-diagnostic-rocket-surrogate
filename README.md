@@ -30,9 +30,11 @@ For technically interested first-time readers, this repository includes a browse
 
 `docs/technical_visual_orientation/index.html`
 
-This page provides a structured overview of the A10-RPT reduced rocket-surrogate logic, including the mission-variable-preserving diagnostic posture, reduced nondimensional surrogate status, thermal / supply-margin / growth-rate stress channels, combined-stress interpretation, evidence hierarchy, repository reading order, and the claim boundary.
+This page provides a project-specific overview of the A10-RPT reduced rocket-surrogate logic. In this repository, the mission variable is not thrust, specific impulse, or flight performance; it is a nondimensional surrogate viability target under chamber-pressure state, pressure-oscillation response, thermal accumulation, supply-margin depletion, cumulative-impulse proxy behavior, noise/disturbance response, and combined-stress amplification.
 
-The page is intended only as an orientation aid. It does not run propulsion simulations, does not validate a rocket engine, does not provide engine design or construction instructions, does not certify flight hardware, and does not replace the manuscript, source materials, figures, or independent expert review.
+The page also summarizes reduced-surrogate state channels, controller-feasible / resource-frontier / architecture-limited regime distinctions, evidence hierarchy, repository reading order, and the claim boundary. All major visual sections include replay controls so that readers can step through the diagnostic logic rather than viewing a static template.
+
+The page is intended only as an orientation aid. It does not run propulsion simulations, does not validate a rocket engine, does not provide engine design, construction, propellant-handling, or hazardous-use instructions, does not certify flight hardware or safety readiness, and does not replace the manuscript, source materials, figures, or independent expert review.
 
 ## What this repository contains
 

@@ -26,9 +26,11 @@ A10-RPTは **feasibility-diagnostic control theory** として扱うのが安全
 
 `docs/technical_visual_orientation/index.html`
 
-このページは、A10-RPT reduced rocket-surrogate の構造、すなわち mission-variable preserving diagnostic posture、reduced nondimensional surrogate としての位置づけ、thermal / supply-margin / growth-rate stress channels、combined-stress interpretation、evidence hierarchy、リポジトリ閲覧順、および claim boundary を短く整理するための補助資料です。
+このページは、A10-RPT reduced rocket-surrogate の構造をプロジェクト固有の観点から整理する補助資料です。本リポジトリにおける mission variable は thrust、specific impulse、または flight performance ではなく、chamber-pressure state、pressure-oscillation response、thermal accumulation、supply-margin depletion、cumulative-impulse proxy、noise/disturbance response、および combined-stress amplification の下で nondimensional surrogate viability が維持されるか、という診断対象です。
 
-このページは説明補助であり、propulsion simulation を実行するものではありません。ロケットエンジンの妥当性、設計・製造手順、flight hardware、安全認証、または実験的検証を示すものでもなく、論文本体、source materials、figures、または専門家による独立評価を置き換えるものでもありません。
+また、このページでは reduced-surrogate state channels、controller-feasible / resource-frontier / architecture-limited の regime distinction、evidence hierarchy、リポジトリ閲覧順、および claim boundary を短く整理しています。主要な図解セクションには replay control を付けており、静的テンプレートではなく診断ロジックを段階的に確認できます。
+
+このページは説明補助であり、propulsion simulation を実行するものではありません。ロケットエンジンの妥当性、設計・製造手順、propellant handling、hazardous-use guidance、flight hardware、安全認証、または実験的検証を示すものでもなく、論文本体、source materials、figures、または専門家による独立評価を置き換えるものでもありません。
 
 ## 含まれるもの
 
