@@ -1,0 +1,9 @@
+original_path,size_bytes,decision
+a10_rpt_phase1_selected/results_v05_full/stress_metrics_by_seed.csv,4105255,"large raw/per-seed CSV; keep outside GitHub body, Zenodo/release asset candidate"
+a10_rpt_phase1_selected/results_v06_full/stress_metrics_by_seed.csv,3635965,"large raw/per-seed CSV; keep outside GitHub body, Zenodo/release asset candidate"
+a10_rpt_phase1_selected/results_v07_full/stress_metrics_by_seed.csv,4111244,"large raw/per-seed CSV; keep outside GitHub body, Zenodo/release asset candidate"
+a10_rpt_phase1_selected/results_v08_full/feasibility_metrics_by_seed.csv,8749276,"large raw/per-seed CSV; keep outside GitHub body, Zenodo/release asset candidate"
+a10_rpt_phase1_selected/results_v09_frontier/frontier_metrics_by_seed.csv,52803456,"large raw/per-seed CSV; keep outside GitHub body, Zenodo/release asset candidate"
+a10_rpt_phase1_selected/results_v10_confirm_combined_harsh/frontier_metrics_by_seed.csv,2007292,"large raw/per-seed CSV; keep outside GitHub body, Zenodo/release asset candidate"
+a10_rpt_phase1_selected/results_v10_confirm_combined_moderate/frontier_metrics_by_seed.csv,2520214,"large raw/per-seed CSV; keep outside GitHub body, Zenodo/release asset candidate"
+a10_rpt_phase1_selected/results_v10_confirm_heat150/frontier_metrics_by_seed.csv,2612026,"large raw/per-seed CSV; keep outside GitHub body, Zenodo/release asset candidate"

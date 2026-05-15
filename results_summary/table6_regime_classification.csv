@@ -1,0 +1,5 @@
+class,regime,interpretation
+I,"nominal, growth, supply, noise",Controller-feasible under suitable A10 barrier variants.
+II,combined_moderate,Supply-resource-frontier feasible; recommended surrogate condition S≈1.55.
+III,heat_150,High-cooling near-feasible thermal frontier; rare residual thermal exceedance remains near C≈2.50.
+IV,combined_harsh,Severe thermal-limited near-frontier under the tested family; unresolved at target failure rate 0.05.

@@ -1,0 +1,932 @@
+[
+  {
+    "path": ".gitignore",
+    "size_bytes": 129,
+    "sha256": "dbb41710e2842166163be4595f5bf310ceec99886fc6fcdf689646663d9d16b6"
+  },
+  {
+    "path": "AI_ASSISTANCE_DISCLOSURE.md",
+    "size_bytes": 481,
+    "sha256": "2c099b50659bf1e82c406d618efae7c4a5e3c568eeadbcb469e8e00a66f4f58d"
+  },
+  {
+    "path": "CLAIM_BOUNDARY.md",
+    "size_bytes": 2327,
+    "sha256": "de554e8106f84aff16cd9780e5eec5a9c37ec973b6352b0a035e6faa53e0296c"
+  },
+  {
+    "path": "LICENSE",
+    "size_bytes": 624,
+    "sha256": "8e34e4e9996b08e658695cdae8505195474cd12b1f0666ed2f163a0ea2e585a2"
+  },
+  {
+    "path": "LICENSE_EVALUATION_ONLY.txt",
+    "size_bytes": 624,
+    "sha256": "8e34e4e9996b08e658695cdae8505195474cd12b1f0666ed2f163a0ea2e585a2"
+  },
+  {
+    "path": "LIMITATIONS.md",
+    "size_bytes": 1109,
+    "sha256": "dd2baa3b11eb159679f59712dc6ce2c425cf60eb7e2cf38ef21b0a8f4a78d397"
+  },
+  {
+    "path": "MANIFEST_NOTE.md",
+    "size_bytes": 391,
+    "sha256": "df877acf3f3f0e65b7c2243d42071d04699c00ccab3c52167e311e3a4748d5f2"
+  },
+  {
+    "path": "PRACTICAL_POSITIONING_SHEET_ja.md",
+    "size_bytes": 3140,
+    "sha256": "7f6bfcff476c114a2737da454509461c92785b0dbc7eb358278b97f443ca8434"
+  },
+  {
+    "path": "PUBLICATION_STRATEGY_ja.md",
+    "size_bytes": 977,
+    "sha256": "f253094682cfad055388404bb764f2240bc8fa6a2c884213fc27fe1ea4e32104"
+  },
+  {
+    "path": "README.md",
+    "size_bytes": 2950,
+    "sha256": "5ccc3780facd1276c34b22401309b586e1554557e177683537539ca41013db79"
+  },
+  {
+    "path": "README_ja.md",
+    "size_bytes": 2526,
+    "sha256": "f080c5d171ca020b63b7455330b775719a8fa17432b3c9ee1d6ca5b938f58941"
+  },
+  {
+    "path": "SOURCE_INPUTS_USED.json",
+    "size_bytes": 596,
+    "sha256": "046a58262239cd111528f160dc4e4c967d35fcc5c9f4a0f67b2098cc8e54bf4b"
+  },
+  {
+    "path": "deferred_related_materials_index/README_ja.md",
+    "size_bytes": 362,
+    "sha256": "039abd353362e3dffdbd2427b76dba6992e0f1454fec1d943c48abea5dca35d8"
+  },
+  {
+    "path": "deferred_related_materials_index/source_materials_classification.csv",
+    "size_bytes": 2559319,
+    "sha256": "dff687298c9321481c53617fa82284bf1071dd722b3ce457439aa87ab21a827d"
+  },
+  {
+    "path": "docs/GITHUB_PUBLICATION_CHECKLIST_ja.md",
+    "size_bytes": 801,
+    "sha256": "1e9c0180349401b3a166761e3310bc587fea1a9f53f6d6b65efc0818d4b967fd"
+  },
+  {
+    "path": "docs/MISSING_MATERIALS_ja.md",
+    "size_bytes": 587,
+    "sha256": "c51e9be91d67d877922915b494e2f1e0805c23a9d1b4b4a267e1761a6597bcb4"
+  },
+  {
+    "path": "docs/REPRODUCIBILITY_NOTES_ja.md",
+    "size_bytes": 848,
+    "sha256": "ac21c94070befa61dbcbe6cae7055e6db21bc48db94bb6ce5cce0f4b50925147"
+  },
+  {
+    "path": "docs/citation_metadata/CITATION_DRAFT_pre_doi.cff",
+    "size_bytes": 1071,
+    "sha256": "e8eb280e9d22329602aa7fc7c4bf4b28f164b14fc78b73c40dfc0fb0e80f759e"
+  },
+  {
+    "path": "docs/public_gate_0/PUBLIC_GATE_0_A10_RPT.json",
+    "size_bytes": 1422,
+    "sha256": "15f2a4f4b8616d86b35a37d1461ff841d3c0ab2277d468c9b4d5e21f9ccc1317"
+  },
+  {
+    "path": "docs/public_gate_0/PUBLIC_GATE_0_A10_RPT.md",
+    "size_bytes": 1657,
+    "sha256": "e9b15add0e26fc4b304e7c6063201ee3d5c27f57cabdee3dc48ed230c78b6189"
+  },
+  {
+    "path": "figures/README_ja.md",
+    "size_bytes": 518,
+    "sha256": "41b0c316ed2af43938e569b979965d97196ed70175a36c563fe4d9144133b250"
+  },
+  {
+    "path": "figures/figure_index.csv",
+    "size_bytes": 12887,
+    "sha256": "08666a3c2ffdc69d386676e117d55cc5e0e83187975111d7721b9e08982ccbdf"
+  },
+  {
+    "path": "large_assets_not_in_git/README_ja.md",
+    "size_bytes": 504,
+    "sha256": "646811e59069557e937d61c649a9ca0726e11261e7af0938183e6d684a8f79f5"
+  },
+  {
+    "path": "large_assets_not_in_git/large_raw_csv_inventory.csv",
+    "size_bytes": 1374,
+    "sha256": "7cb92226a401980e7daa7416aed1ea86e6b7d9961e57607b1b169c0c2482b8ea"
+  },
+  {
+    "path": "manuscript/A10_RPT_Phase1_Mission_Variable_Preserving_Structured_Priors.pdf",
+    "size_bytes": 634113,
+    "sha256": "354d8c0ec04c70c91f1f7416b81ffb9811f91041850d9a46a2dd76f2474c5521"
+  },
+  {
+    "path": "manuscript/README_ja.md",
+    "size_bytes": 223,
+    "sha256": "480b709ea0df78be8920e5431f6509a7ac5a4d7c7124c9222666483653092593"
+  },
+  {
+    "path": "manuscript/jxiv_metadata_ja_en.md",
+    "size_bytes": 624,
+    "sha256": "3a87752e6f915c156e81c384354d60f98abe3f945ab4725f7c4156ec7b8209fe"
+  },
+  {
+    "path": "results_summary/summary.json",
+    "size_bytes": 2072,
+    "sha256": "a81e720ed57bc41373a192804bab94b4d354260dfe9b4b882029c2382720d7b4"
+  },
+  {
+    "path": "results_summary/table4_in_distribution_result.csv",
+    "size_bytes": 128,
+    "sha256": "ac32fb6a0c64dcc1da078d9a8c0c0ddd826b260cc32c1ecee425b96625ca31bc"
+  },
+  {
+    "path": "results_summary/table5_highN_frontier_confirmation.csv",
+    "size_bytes": 279,
+    "sha256": "8de8c0be8aa6624e81e8ae208b8ade3df73babfe3921f40ff0f1536c4d15a9ce"
+  },
+  {
+    "path": "results_summary/table6_regime_classification.csv",
+    "size_bytes": 457,
+    "sha256": "5bc8490152530a00908362144c1df4f5f4884744525ed19e6707ba09021c5a0b"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/A10_PTF_Rocket_selected/docs/rhps_formulation.tex",
+    "size_bytes": 12889,
+    "sha256": "ba48e012dcf841c1ca35ea08d9c32b5a64327af878c8ddcdc403ce58c32f9ad5"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/A10_PTF_Rocket_selected/output/ansatz_optimization_result.png",
+    "size_bytes": 94134,
+    "sha256": "28503a13eaae51394f5ca270d285d53100c452f985bcb711557a34210ee261db"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/A10_PTF_Rocket_selected/output/diagnostic_analysis.png",
+    "size_bytes": 69459,
+    "sha256": "bcf96fbb1ce6744e83db265712b8d03772c674def44e1b2275db3df9eb0cbd98"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/A10_PTF_Rocket_selected/output/dynamic_cost_comparison.png",
+    "size_bytes": 40278,
+    "sha256": "d0e13446b4b578bae9cce987d02fc1ba53a2d793c8a7fedf7f4ec5fbd93249d1"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/A10_PTF_Rocket_selected/output/edge_of_chaos_comparison.png",
+    "size_bytes": 27758,
+    "sha256": "fcbe044a3b276adbe13943a56057e77af554200463a6d2a73da22455dfad826f"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/A10_PTF_Rocket_selected/output/freq_drift_comparison.png",
+    "size_bytes": 60362,
+    "sha256": "2165307c0aa91fd2d4a66874a0b9ed2e28bb19f7803ab9668cf38ce4fc23fb31"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/A10_PTF_Rocket_selected/output/ood_survival_test.png",
+    "size_bytes": 36418,
+    "sha256": "f0f823134b1f9d44bced12cc21ee1e4749468325af210799d0fee255a6eed6c1"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/A10_PTF_Rocket_selected/output/optimization_result.png",
+    "size_bytes": 83458,
+    "sha256": "3656e97e32fbe09b39d5994adfa888d8e52271bea7a5feaa23aa65f90adda1b6"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/A10_PTF_Rocket_selected/output/pmp_eigen_proof.png",
+    "size_bytes": 102711,
+    "sha256": "15724f834f1806ffe2ab56fb03109e0a4c96db819ece8f492bc01793e8746c07"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/A10_PTF_Rocket_selected/output/resource_limit_comparison.png",
+    "size_bytes": 43730,
+    "sha256": "f3e0e6ee67228309d3603ed65179c863cc95247b5c1ffc072a7fbf43b82d633f"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/A10_PTF_Rocket_selected/output/robust_optimization_result.png",
+    "size_bytes": 99704,
+    "sha256": "f95b7e4e9d9a52064fdfe0cd9a0896ea5dfeb1668253d796bdd6462553cd6647"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/A10_PTF_Rocket_selected/output/saturation_optimization_result.png",
+    "size_bytes": 82331,
+    "sha256": "60baeae295e4a5d660b168873bd6218cf60f89ec1c1302e0abacde7d969640a4"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/A10_PTF_Rocket_selected/output/spectral_sensitivity.png",
+    "size_bytes": 69044,
+    "sha256": "77b1f85e9d3d252aa03de80aea155dbf0e214d271f687a551d74bd14dd695349"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/A10_PTF_Rocket_selected/src/rhps_ansatz_optimizer.py",
+    "size_bytes": 5359,
+    "sha256": "3fd02df696cea60aa46feb4b931b7e984eb2a072854984c864ee3edab5879791"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/A10_PTF_Rocket_selected/src/rhps_diagnostic_analysis.py",
+    "size_bytes": 4433,
+    "sha256": "15aa6d55e66e95cdab22a5d67031d012e573d7de8886d1a66443f17dcf0d7bfb"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/A10_PTF_Rocket_selected/src/rhps_edge_of_chaos_test.py",
+    "size_bytes": 4706,
+    "sha256": "90e40e89aa18199b18e3c707f415cfbc9c914b9cf3cab1cfe4325b01cdc32af7"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/A10_PTF_Rocket_selected/src/rhps_final_comparison.py",
+    "size_bytes": 4879,
+    "sha256": "406da75987f66a086a3cb2c77fe8d2c1de726966069dcf62caed2f98f44c40da"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/A10_PTF_Rocket_selected/src/rhps_final_cost_comparison.py",
+    "size_bytes": 4483,
+    "sha256": "f9fb3d2b7b00a3a7dd52104c202e4ccd8e155c41cafff1eadb46c57f268b9c08"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/A10_PTF_Rocket_selected/src/rhps_freq_drift_test.py",
+    "size_bytes": 5161,
+    "sha256": "8d5858dda7f74976f63e4c7abf6424920c3ed7ad33c9381d0e675bf587d6c2c9"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/A10_PTF_Rocket_selected/src/rhps_margin_sensitivity.py",
+    "size_bytes": 5600,
+    "sha256": "1f91dd5239b24c7931053129e0414795bd532f4d55cc124b32cac53436136377"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/A10_PTF_Rocket_selected/src/rhps_ood_survival_test.py",
+    "size_bytes": 4632,
+    "sha256": "4b97e43f9cec95472df1d58c5732490524d7520ecbe5273986a49f3bccda6e88"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/A10_PTF_Rocket_selected/src/rhps_optimizer.py",
+    "size_bytes": 4511,
+    "sha256": "a72c1c022090444f1ece94d1d2b3e1ed87fd4dd0b8a3372efb7a081d1367495e"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/A10_PTF_Rocket_selected/src/rhps_pmp_eigen_proof.py",
+    "size_bytes": 6275,
+    "sha256": "2626a283e803ce423b4a7de724e10c0f63bca66b699265591699a353ef7a9b42"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/A10_PTF_Rocket_selected/src/rhps_policy_comparison.py",
+    "size_bytes": 3030,
+    "sha256": "c62297964f4b3c596171fc163f341f2cb764eede68c6c779aca79bddca3de85a"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/A10_PTF_Rocket_selected/src/rhps_resource_limit_test.py",
+    "size_bytes": 4312,
+    "sha256": "be6f450cd65494e5fddb1cc621e1bfbf6c2070761f1dd41546e395c4a5bb8a5b"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/A10_PTF_Rocket_selected/src/rhps_robust_optimizer.py",
+    "size_bytes": 6939,
+    "sha256": "8dc420d678c7a751af42e26fd6cc337b078b82f6e31a1fc1d03e00e94ead53d5"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/A10_PTF_Rocket_selected/src/rhps_saturation_optimizer.py",
+    "size_bytes": 5702,
+    "sha256": "6dbeb95138e29333027ac1302f4579c17eecc59c511db9542c8991e49a5c2344"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/A10_PTF_Rocket_selected/src/rhps_taylor_test.py",
+    "size_bytes": 5251,
+    "sha256": "86bbe155702ad9e6ff9b321d3faa994b42451dece364bc9a696e91629f298741"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/README_ja.md",
+    "size_bytes": 807,
+    "sha256": "2a2ba15528a3d7cf122e25034a5062b25a193f8afb82572cbaaaab9ae887ad8d"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/a10_rpt_phase1.py",
+    "size_bytes": 21796,
+    "sha256": "d8b448831a7bd03f72128d344715be8254e7fd7fd68964f9bc6afa3352cc59c1"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/a10_rpt_phase1_v01_backup.py",
+    "size_bytes": 21796,
+    "sha256": "d8b448831a7bd03f72128d344715be8254e7fd7fd68964f9bc6afa3352cc59c1"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/a10_rpt_phase1_v02.py",
+    "size_bytes": 26604,
+    "sha256": "d8faf1d7391fa691ceeff936bb34c955ec2fec3111c192764f9971772d9ee270"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/a10_rpt_phase1_v02_backup.py",
+    "size_bytes": 26604,
+    "sha256": "d8faf1d7391fa691ceeff936bb34c955ec2fec3111c192764f9971772d9ee270"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/a10_rpt_phase1_v03.py",
+    "size_bytes": 30057,
+    "sha256": "9ccb73a16104bdc0dec04f60cc9c55fb2aa5edd8cb77918b25e69519b75d8a00"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/a10_rpt_phase1_v03_backup.py",
+    "size_bytes": 30057,
+    "sha256": "9ccb73a16104bdc0dec04f60cc9c55fb2aa5edd8cb77918b25e69519b75d8a00"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/a10_rpt_phase1_v04.py",
+    "size_bytes": 34100,
+    "sha256": "ffb8bb419b006cc3c07ac2643d5de1299c76af1936813b9920ff6f0a3c4400cb"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/a10_rpt_phase1_v05_stress.py",
+    "size_bytes": 16320,
+    "sha256": "d46c72b3a31b38c788b4bb65ce0e59659b2d2d2b1cba6769ff34bf48f2c53ef1"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/a10_rpt_phase1_v06_adaptive.py",
+    "size_bytes": 17687,
+    "sha256": "9c90af0b4dd98526baa64dcbf6b05c7901d8e24ec7e78b27926dc21295017427"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/a10_rpt_phase1_v07_supervisor.py",
+    "size_bytes": 17357,
+    "sha256": "4b0e6b3f5018cbd244243ef010b0260a181c46fdf43a0ad755ac6c10967bedc3"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/a10_rpt_phase1_v08_feasibility_sweep.py",
+    "size_bytes": 14405,
+    "sha256": "0552f6ec764679008c9f847bb73382f8c27f4040801b15374d4d33d9afbf2330"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/a10_rpt_phase1_v09_frontier.py",
+    "size_bytes": 11681,
+    "sha256": "1001dc255c8575e7777f5b54527d5504fde7fa12aaf483470d99d81877e00836"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_a10_rpt_phase1/control_uC.png",
+    "size_bytes": 96975,
+    "sha256": "4bd3172f0218f763dbcdc4ebd97f544114c1d1089350447713463b54d8967878"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_a10_rpt_phase1/control_uD.png",
+    "size_bytes": 101493,
+    "sha256": "e653a8793134462518188037e0eeb584d2665c7f8b60c38ecd8bc97f1bcfce7f"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_a10_rpt_phase1/control_uP.png",
+    "size_bytes": 124473,
+    "sha256": "2bcdd4aa5a3ddc8f564b3216b35724e9941c9c9ed677aa01956ad56900fe42a5"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_a10_rpt_phase1/control_uPhi.png",
+    "size_bytes": 134457,
+    "sha256": "48bef8747853920bd064a727b792aed9fc704280a626d8c73657b97afc8d8836"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_a10_rpt_phase1/cvar90_loss_by_controller.png",
+    "size_bytes": 71803,
+    "sha256": "f28271bd0dc9759ef0e62ef8bff400ab279a4cfb8d24a88cedc0111bc7df72c4"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_a10_rpt_phase1/failure_rate_by_controller.png",
+    "size_bytes": 69800,
+    "sha256": "ae224da3518cc63442e8a028ea74ba553f8b6479b98de4f9b11024a6541c0a7a"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_a10_rpt_phase1/metrics_by_seed.csv",
+    "size_bytes": 185233,
+    "sha256": "d225bf159d00607b78f33afaa1190f6484aa06990aa4735dc3296096a23a33ad"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_a10_rpt_phase1/scatter_finalI_vs_maxa.png",
+    "size_bytes": 213245,
+    "sha256": "41f5b2b6dfd4500627f1fa84a6cf1ecf03f57fbe75dc0ddc782826e5aed011ba"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_a10_rpt_phase1/summary_by_controller.csv",
+    "size_bytes": 1518,
+    "sha256": "7232c72fe89b252fff1624ab9a3ef8bfea3eff099d9839cd355141f0e819562a"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_a10_rpt_phase1/trajectory_I.png",
+    "size_bytes": 115241,
+    "sha256": "b80366b03ff0cb179c74044543f366f3d051f98a38ab8284fabe31b0a6c23e24"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_a10_rpt_phase1/trajectory_a.png",
+    "size_bytes": 101841,
+    "sha256": "5982a724090bc7c89f6da3fa40d3c5aa85a0759f315e6cb5fa86c3261dcdc754"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_a10_rpt_phase1/trajectory_h.png",
+    "size_bytes": 111610,
+    "sha256": "557d8b07ce4c3941419fb543d5f4220d9b8a013896c1c00a39d8095275707227"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_a10_rpt_phase1/trajectory_p.png",
+    "size_bytes": 106041,
+    "sha256": "6e1417e1db6d055a6b70bcd8f2ee67b71ffaff0ba5027c1870150a65da8f7bd0"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v02_full/control_uC.png",
+    "size_bytes": 94726,
+    "sha256": "65144de5c9f5fc2fef41afcd9e3eedb5e5af24e09bf8efadf8769777e8d2ad24"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v02_full/control_uD.png",
+    "size_bytes": 103681,
+    "sha256": "1f83eae49e29e31a9e8c4a731b5847f3821180d7cbb16c5c0f5029c3d8518e00"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v02_full/control_uP.png",
+    "size_bytes": 96451,
+    "sha256": "469c7ed612c6088ceee47165e519e49bc2264e24db940256e52e4bbf5b985352"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v02_full/control_uPhi.png",
+    "size_bytes": 156929,
+    "sha256": "73c04174dd6a5a70eb0b67877f7f2fef1a77317197633344b3a5789f647c0034"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v02_full/cvar90_loss_by_controller.png",
+    "size_bytes": 81658,
+    "sha256": "99e997a339c9ad2a68dbb5210867a6547f2064dcb506c6c882f297ba138bd352"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v02_full/cvar90_violation_by_controller.png",
+    "size_bytes": 96003,
+    "sha256": "0dad248511c16dc2bb55482f4baa62e4a91dc6fed1d8a4dfbf04abcaf20e63bc"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v02_full/failure_rate_by_controller.png",
+    "size_bytes": 79547,
+    "sha256": "a173de6778d26cf9052fddb15fc82955f30e6dda2cd44c127568743c32e65f37"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v02_full/failure_reason_rates.csv",
+    "size_bytes": 604,
+    "sha256": "cdaca801c91d86e53a772e3009a508a82b0702fd95a2b9c33ccde7db82b0cd42"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v02_full/metrics_by_seed.csv",
+    "size_bytes": 251516,
+    "sha256": "829f1e1ae87781d6c5731d5ac554f454299058e81d7ba43de32b13d2a16e6222"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v02_full/scatter_finalI_vs_maxa.png",
+    "size_bytes": 234103,
+    "sha256": "912d8bef0138b87847ea6579435a0df943be501c3200d6c71a284374880f587c"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v02_full/summary_by_controller.csv",
+    "size_bytes": 3183,
+    "sha256": "6aad6d9b9fb8d6c9e0ec535d676de95e4dcfa20acf098a7a3dc2f0dcbe4a6e85"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v02_full/trajectory_I.png",
+    "size_bytes": 122247,
+    "sha256": "97c136b2e1a7af5e82c31a46cd4aec93700e0e9dae3acde128b120e738adba62"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v02_full/trajectory_a.png",
+    "size_bytes": 108031,
+    "sha256": "eeff18270d9f49d56bf66a737f9d8c7f64cdeb16530887a04410b4bbf70df7c5"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v02_full/trajectory_h.png",
+    "size_bytes": 119704,
+    "sha256": "a33a0b3ce201690e52f0bc180789eda3617823f2b7bbbf5f5b78975f5561a7b8"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v02_full/trajectory_p.png",
+    "size_bytes": 118575,
+    "sha256": "d09cbacda581d220d4df178e4a2a8a0f93d067338a9cb005dd4e1579a2f5bce8"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v02_full/unsafe_duration_by_controller.png",
+    "size_bytes": 84412,
+    "sha256": "04f15781f1fd4160ea93e30d34f0f0b56488e47c50b39077b632ef144fb1e8e9"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v03_full/control_uC.png",
+    "size_bytes": 96515,
+    "sha256": "d3604cef8dc1d75d4173dc748f3040a5f92d93d8392b5766bfbf56e75efc44a7"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v03_full/control_uD.png",
+    "size_bytes": 109252,
+    "sha256": "5e26ea728dbce396b5ed34f471be9afad743deabc8622432698d876a9c95e486"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v03_full/control_uP.png",
+    "size_bytes": 114707,
+    "sha256": "d467149fae1f4d6d980b763781a417f9ee75ced69f96a06d50ff2676595d6b43"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v03_full/control_uPhi.png",
+    "size_bytes": 166465,
+    "sha256": "1b8c0752e77c8f82064f367c5f23bd0bf13f168be9fc7a0065e943ee39c29b30"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v03_full/cvar90_loss_by_controller.png",
+    "size_bytes": 96577,
+    "sha256": "e433e09bae1fb339908b263281bca3f5ca0325d081e777bd1953bc74bb28de8a"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v03_full/cvar90_violation_by_controller.png",
+    "size_bytes": 110284,
+    "sha256": "913d00c691b4af714b39f121fbe9ec77b4e3738de5c99894ffce203f247782d8"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v03_full/failure_rate_by_controller.png",
+    "size_bytes": 94519,
+    "sha256": "79228255229fe5e556fa04f5656cf006f00a059cfa2d3de23fe3f8e3fc59006d"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v03_full/failure_reason_rates.csv",
+    "size_bytes": 696,
+    "sha256": "293b406555c6da4d30587ac7b51ce2366f596eb1b647d6a25944af4145596831"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v03_full/metrics_by_seed.csv",
+    "size_bytes": 306153,
+    "sha256": "eff7f2d2929006524dc02a49956da208b54c1b286c5ca159a55975b6bd177d0b"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v03_full/scatter_finalI_vs_maxa.png",
+    "size_bytes": 248358,
+    "sha256": "849bb16ebca1e0810019b32cf2bcdc37423f432bb793e35a70418a1b8ae14a21"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v03_full/summary_by_controller.csv",
+    "size_bytes": 3791,
+    "sha256": "ff2ba16fe27ab433f85ee317ee2b43f7d8bda9f9c339af0967bdb07e80fb49e8"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v03_full/trajectory_I.png",
+    "size_bytes": 131466,
+    "sha256": "d640b7c1db3e058f69230e6381c5dfa996dbdd2fbc754e33db30659c91104996"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v03_full/trajectory_a.png",
+    "size_bytes": 115323,
+    "sha256": "b0f042fbe5fe4975559f8db8d8620ecdb1df9188dfa22f53b59ecc08050381ba"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v03_full/trajectory_h.png",
+    "size_bytes": 133038,
+    "sha256": "ec9d1c4ee9cac4ec3eeef8498e95875248e095585a095e358997acd9a1b99d56"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v03_full/trajectory_p.png",
+    "size_bytes": 134330,
+    "sha256": "2440de832017006d6e47d14302dcb769d23dbeebb1526d914e526deb5a24e5a4"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v03_full/unsafe_duration_by_controller.png",
+    "size_bytes": 99472,
+    "sha256": "e0ddf7cd3b43ea9b9ef47d60b670ff4241fe72b3bde14ed28e4fbad1e189e07c"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v04_full/control_uC.png",
+    "size_bytes": 84031,
+    "sha256": "435cad8c968042271ab0e0114802c3ab3cab655ff00413333d94d80d434f3d28"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v04_full/control_uD.png",
+    "size_bytes": 117051,
+    "sha256": "6c563f502a9499072ca97ac8d7428d5d914a806c0f8619d440682278add05ab3"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v04_full/control_uP.png",
+    "size_bytes": 114015,
+    "sha256": "a3c5c8e8eda5b37c7693218cb61001e8005ecaa113ae5d135908bf5d4e1621d3"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v04_full/control_uPhi.png",
+    "size_bytes": 196647,
+    "sha256": "b05ffb657072522d40a860e6d46e6792a41f7fbe54a127828307b7e87f9af119"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v04_full/cvar90_loss_by_controller.png",
+    "size_bytes": 111497,
+    "sha256": "90d05152e5f085046b692e946e0a5e858c908d2e00d27e127650f9f77f203910"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v04_full/cvar90_violation_by_controller.png",
+    "size_bytes": 124997,
+    "sha256": "7b44cab9675e5f232acc086538915bd1905bc6908ee1a3862e2c212eb3102994"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v04_full/failure_rate_by_controller.png",
+    "size_bytes": 109477,
+    "sha256": "2c191cc04e16e7a14063a032948f0c920a79122d45ada86818336ae486a24927"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v04_full/failure_reason_rates.csv",
+    "size_bytes": 784,
+    "sha256": "3b366834ac096bd23d098936848dc0a41277e492eaab99c5c7f39560e76200ce"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v04_full/metrics_by_seed.csv",
+    "size_bytes": 359832,
+    "sha256": "1d1bcbb332921602142a2e264c9c494b929799a9c671f6cf33d81d3d034777ed"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v04_full/scatter_finalI_vs_maxa.png",
+    "size_bytes": 278119,
+    "sha256": "c8f8c569c79adf6c1a33e84327b844b74ee0b291b8213edbc718df51f2c1abc8"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v04_full/summary_by_controller.csv",
+    "size_bytes": 4285,
+    "sha256": "5814f4d0cbd10c866ba39858e0542892b5386f9e4e5e0fdfa201ea1c2c99fe5b"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v04_full/trajectory_I.png",
+    "size_bytes": 135847,
+    "sha256": "f8b99618790a9846eda5aefee74acc38d2a0b668d2875eef4f05df53e480da8b"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v04_full/trajectory_a.png",
+    "size_bytes": 119454,
+    "sha256": "d384b1d86329a6d60255675623efd2a80b2a7de55e2944230f3329505c6e1e42"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v04_full/trajectory_h.png",
+    "size_bytes": 138498,
+    "sha256": "4290ae9a8404bd621b59dbc3da3a4a885a963045c0366dce8b902f7a6ce6f888"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v04_full/trajectory_p.png",
+    "size_bytes": 136331,
+    "sha256": "f1c5da1f8fe321e19c4a60bb4a135b0a376365bdcd7df60659e8ac8ccf8dfc7e"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v04_full/unsafe_duration_by_controller.png",
+    "size_bytes": 114170,
+    "sha256": "433cff400de6042d5483f735af10f2bd14b29336e44c09c9d878337706adfd51"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v05_full/stress_cvar90V_by_profile.png",
+    "size_bytes": 134876,
+    "sha256": "37a8ec459e994e6ff039f18ef60889e968c523d43a7a5991a06c972a8a9a7daa"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v05_full/stress_fail_h_rate_by_profile.png",
+    "size_bytes": 121488,
+    "sha256": "2bc30c0aac835d9dbf0ad7992773d6aafb7dfe7b0b9bcbae4b7af0ba54f6405b"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v05_full/stress_fail_m_rate_by_profile.png",
+    "size_bytes": 124642,
+    "sha256": "ed7d3e216ab70617bfc6dbfa2a375f1b039b3d87153a602731829c17475392a6"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v05_full/stress_failure_rate_by_profile.png",
+    "size_bytes": 118602,
+    "sha256": "63965e442fd4a3a6c789466f88317af1ffdee95f2cbbcf143c7bec1fb6c5a4e0"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v05_full/stress_summary_by_profile_controller.csv",
+    "size_bytes": 26448,
+    "sha256": "71ba764f3b2e4203c20a457c2c567fd35fc6f6b7289a85da0dc8fbb679892a2f"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v05_full/stress_unsafe_duration_by_profile.png",
+    "size_bytes": 126740,
+    "sha256": "f4f9714b5923eb5ce1d9f855125c6f9867812641483878249eed7916bd3192db"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v05_quick/stress_cvar90V_by_profile.png",
+    "size_bytes": 127097,
+    "sha256": "dfef776b09800ca3ef03515909af72c63cb3ab25952f48eaeb64241e5fb0954a"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v05_quick/stress_fail_h_rate_by_profile.png",
+    "size_bytes": 121336,
+    "sha256": "928996206e1bdda16267f07561c45cebe66ee5761dbeb6540cbb31f2c5245a72"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v05_quick/stress_fail_m_rate_by_profile.png",
+    "size_bytes": 124020,
+    "sha256": "31c178e844311a08bbd2387394dca5170399991e78b3dd06facd297a79bc0111"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v05_quick/stress_failure_rate_by_profile.png",
+    "size_bytes": 118038,
+    "sha256": "d92ee06c28ebfd11952cecf234331820ae2c4215183d0024a5a8b5f2b0007759"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v05_quick/stress_metrics_by_seed.csv",
+    "size_bytes": 606785,
+    "sha256": "bff437056a976e8a12a1dc6b2d15a3559d26a8b320a103dae5bef6c80deee3c5"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v05_quick/stress_summary_by_profile_controller.csv",
+    "size_bytes": 27377,
+    "sha256": "9e46443858fe18070f71be17e08c75e6cd1095e2bf576473d3ce5fd695978aa9"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v05_quick/stress_unsafe_duration_by_profile.png",
+    "size_bytes": 126810,
+    "sha256": "aecf1b4dade0ae3a346b2ee915f7a9d86d16d8f95a63c32cfb03e2b5d56b7796"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v06_full/stress_cvar90V_by_profile.png",
+    "size_bytes": 123976,
+    "sha256": "6aa3da5e83246376265eb55ac72bfac9ad2b50f689ce3ffb622fefb6041f9d5a"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v06_full/stress_fail_h_rate_by_profile.png",
+    "size_bytes": 113672,
+    "sha256": "1c5012bede07f9923974563233daa37fef75c95ccd8ff5ad9b244340f342adb6"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v06_full/stress_fail_m_rate_by_profile.png",
+    "size_bytes": 117670,
+    "sha256": "d3222014d9357bb10ab8a8ec9db0b1520ceefa631c87883fd747a4481c48e39f"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v06_full/stress_failure_rate_by_profile.png",
+    "size_bytes": 109855,
+    "sha256": "43483058a2e8b22687d78e0912cacac3f881c0aa7a5be085e0cb3eddb2696097"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v06_full/stress_summary_by_profile_controller.csv",
+    "size_bytes": 23649,
+    "sha256": "bd820b42c9d701aa484933c474f753e3b428ecf70c579371de9bac72082df88a"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v06_full/stress_unsafe_duration_by_profile.png",
+    "size_bytes": 117467,
+    "sha256": "bfe503a7ce76e58e96dc19b7a476a1e3562dae663b78c332649c4ab40b7cae26"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v07_full/stress_cvar90V_by_profile.png",
+    "size_bytes": 126299,
+    "sha256": "2b6b36dc17ab57c03ca1dcbe5ce737c084f8505e35d29649d061b15e329a56b5"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v07_full/stress_fail_h_rate_by_profile.png",
+    "size_bytes": 116138,
+    "sha256": "39c63016f7b9a93084ec81b913b851d8b863dc9ae8f5edf9c35a8b3a66a402e7"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v07_full/stress_fail_m_rate_by_profile.png",
+    "size_bytes": 120324,
+    "sha256": "23db3ad61e105b5da58685f86a7c1864b3f54a01bf690350905d7748dc4c330e"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v07_full/stress_failure_rate_by_profile.png",
+    "size_bytes": 113650,
+    "sha256": "5d8a2301b7d12bcbb1369c0a78dceb58d3774d36c138b0a31e33fc02fb89eeee"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v07_full/stress_summary_by_profile_controller.csv",
+    "size_bytes": 26801,
+    "sha256": "bc4fd44db43989e2cb5f51870b1d4a3db1df316e893b4d4485011fc6767a931e"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v07_full/stress_unsafe_duration_by_profile.png",
+    "size_bytes": 119753,
+    "sha256": "3f2be1e3d95d7991c6b25b4a7e188c7884b757c2d9e08cc68f19a110a4010da2"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v08_full/best_architecture_controller_by_profile.csv",
+    "size_bytes": 1934,
+    "sha256": "b49d02d4b40d6af44325e6997d946b1f4bbe247c314949efc797fb5a6074eaff"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v08_full/best_controller_by_profile_architecture.csv",
+    "size_bytes": 17319,
+    "sha256": "8135f33862a82ea671d48267dc9fffeaf6015cbc804fd119818e0acb0d1398f8"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v08_full/best_cvar90V_heatmap.png",
+    "size_bytes": 137048,
+    "sha256": "5007861fd6d396596fbb0f2a634c78ebf625f05a6f764f8d1060cdd9be3264ac"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v08_full/best_failure_rate_heatmap.png",
+    "size_bytes": 143673,
+    "sha256": "37b487f8c6981b29cffa158d943c7022c39aa78d197164e3de4dae02aab619a0"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v08_full/best_unsafe_duration_heatmap.png",
+    "size_bytes": 150238,
+    "sha256": "f0d051cc2561232c3ec782659f86c201716a0862fc0695d44a0326dafa2c9a5c"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v08_full/feasibility_summary_by_profile_arch_controller.csv",
+    "size_bytes": 86913,
+    "sha256": "ba47dbfeb7b6060ca27e462cea45a8300fa09b2ca03f4bad374ed26fa69e58be"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v09_frontier/frontier_best_by_profile.csv",
+    "size_bytes": 1266,
+    "sha256": "ef495457bfb6c1fe89f71f82106064477334f4d2fb5744c93f4a3ae27300229b"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v09_frontier/frontier_failure_rate_combined_harsh.png",
+    "size_bytes": 97739,
+    "sha256": "02aab8f348b4aefb2d25a1a053a4cbba43159a8923f2c34363e73aa0ec3d4423"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v09_frontier/frontier_failure_rate_combined_moderate.png",
+    "size_bytes": 90306,
+    "sha256": "4403d2d8dd89883e681438cf31777324f9e349d3eda1a8c6520bf553e2c6dec9"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v09_frontier/frontier_failure_rate_heat_150.png",
+    "size_bytes": 120534,
+    "sha256": "ea14bdc7021fbe74f822d692146fb1662c17fe2d9c5249aa71a77d8af68f7ea2"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v09_frontier/frontier_feasible_candidates.csv",
+    "size_bytes": 32590,
+    "sha256": "8ee6a0c9cefb88e2155cbedf173ef6c5e66a0980df521735abee41a00513461a"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v09_frontier/frontier_min_feasible_by_profile.csv",
+    "size_bytes": 646,
+    "sha256": "7f37f5f98feb348951026f57c58e6801947b400468df581c0ff2c80d4fcbc5e7"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v09_frontier/frontier_summary_all.csv",
+    "size_bytes": 739211,
+    "sha256": "95743a7e59fb0a1f82b2129f8f97279e49011072bc69e130f08c862a4e1ad7c6"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v10_confirm_combined_harsh/frontier_best_by_profile.csv",
+    "size_bytes": 644,
+    "sha256": "9dc160540bdd7c67e8f46e58cc674b18d1d42d0fc1e39c4e71903ae117d31499"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v10_confirm_combined_harsh/frontier_failure_rate_combined_harsh.png",
+    "size_bytes": 54453,
+    "sha256": "50d049678ec492c02816ae55c24aa76db7b70918b87d1b4c60f0cbbd6a1dd17c"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v10_confirm_combined_harsh/frontier_feasible_candidates.csv",
+    "size_bytes": 309,
+    "sha256": "e7cbd0f661abde93108afb23de71bec42cc4c002bf616ec6c7c8b6e6342966a3"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v10_confirm_combined_harsh/frontier_summary_all.csv",
+    "size_bytes": 12273,
+    "sha256": "ebf426640fab99c20fa703c150e3bd45bfe2be720e4c0d96ea97844dcbc05785"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v10_confirm_combined_moderate/frontier_best_by_profile.csv",
+    "size_bytes": 589,
+    "sha256": "5ce9d793b3334ae9ca70d54fc1bee90ac9c46bfec8a8703a3987358ae427873a"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v10_confirm_combined_moderate/frontier_failure_rate_combined_moderate.png",
+    "size_bytes": 54127,
+    "sha256": "aeaac87b0ac0b0bdf1403546b2d761d50a67ff83304d9aba344ea9c2c5e66538"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v10_confirm_combined_moderate/frontier_feasible_candidates.csv",
+    "size_bytes": 7920,
+    "sha256": "f750a021b1a479a75cf0d6d82173c3fb902b3ce9f31b20b3fd01f371efa0e40e"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v10_confirm_combined_moderate/frontier_min_feasible_by_profile.csv",
+    "size_bytes": 695,
+    "sha256": "b51960cdb2a8dde476daca2b7e9bed62c8baae8f33599e456beb09de4167f5d7"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v10_confirm_combined_moderate/frontier_summary_all.csv",
+    "size_bytes": 9738,
+    "sha256": "f82b329ee2fff33970dfe304e70837319ac46efab9268dd98a39a18c28a05be6"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v10_confirm_heat150/frontier_best_by_profile.csv",
+    "size_bytes": 664,
+    "sha256": "637cf0269cb7c7d5047f76cdca2e502943aa280b08c3a58842bc9c559b962d44"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v10_confirm_heat150/frontier_failure_rate_heat_150.png",
+    "size_bytes": 70715,
+    "sha256": "bab47e8a02f96555c6ebb24de2f0537aca526f449efd89ead2a327f88b5c15a7"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v10_confirm_heat150/frontier_feasible_candidates.csv",
+    "size_bytes": 5295,
+    "sha256": "fd293930bc4eec778279e7fe44523baaaa05f36a7c4ebe43008161e80a21c83e"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v10_confirm_heat150/frontier_min_feasible_by_profile.csv",
+    "size_bytes": 652,
+    "sha256": "67d73c3003acb1cc3422a49c1fee6cddd5aa4f3ffaea3f2ab707db735e1ddff9"
+  },
+  {
+    "path": "source_materials/selected_from_uploaded_rpt_project/a10_rpt_phase1_selected/results_v10_confirm_heat150/frontier_summary_all.csv",
+    "size_bytes": 11826,
+    "sha256": "dcc9c865246c804f9b6a3b0f5aa19635c9eebd6874a4e3d98c7b0097e87e6fb3"
+  },
+  {
+    "path": "tools/verify_manifest_excluding_self.py",
+    "size_bytes": 898,
+    "sha256": "6b1294314e6eb503336d049055322f89f6a4e596d76475efbdf1b39b24b7c395"
+  }
+]

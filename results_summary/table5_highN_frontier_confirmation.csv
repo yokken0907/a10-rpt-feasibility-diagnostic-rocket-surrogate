@@ -1,0 +1,4 @@
+profile,controller,C,S,Is,failure,unsafe,worst_h,worst_m
+combined_moderate,A10 minimax v0.7,1.0,1.55,1.0,0.0,0.0,0.975344,0.20077
+heat_150,A10 minimax v0.7,2.5,1.2,1.0,0.0067,0.0015,1.008569,0.195385
+combined_harsh,A10 minimax v0.7,2.5,1.75,1.1,0.075,0.0154,1.043346,0.22389

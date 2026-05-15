@@ -1,0 +1,29 @@
+{
+  "decision": "PASS-WITH-MINOR-PUBLICATION-FIXES-A10-RPT-PUBLIC-GATE-0",
+  "repository": "a10-rpt-feasibility-diagnostic-rocket-surrogate",
+  "public_version": "v0.1.1-public-gate",
+  "date": "2026-05-07",
+  "classification": "ロケット推進サロゲート・feasibility診断制御理論",
+  "allowed_public_description": "A nondimensional reduced-surrogate feasibility-diagnostic control study for rocket-propulsion-like dynamics under thermal, supply, and combined-stress constraints.",
+  "allowed_public_description_ja": "熱・供給・複合ストレス制約下のロケット推進様ダイナミクスを扱う無次元低次元サロゲート上のfeasibility診断制御研究。",
+  "forbidden_claims": [
+    "engine-design tool",
+    "propulsion-performance predictor",
+    "hazardous experiment procedure",
+    "flight controller",
+    "aerospace safety certification"
+  ],
+  "publication_posture": {
+    "github": "GO after URL replacement.",
+    "zenodo": "GO after GitHub release.",
+    "jxiv": "CONDITIONAL; keep all language as reduced-surrogate feasibility diagnostics."
+  },
+  "manifest_policy": "manifest-excluding-self",
+  "manifest_entries_verified": 185,
+  "manifest_errors": [],
+  "notes": [
+    "Japanese marker source paths were normalized to ASCII selected-source names.",
+    "No hazardous-procedure or flight-hardware claim is authorized."
+  ],
+  "claim_promotion_authorized": false
+}

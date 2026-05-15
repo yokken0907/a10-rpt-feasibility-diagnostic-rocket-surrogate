@@ -1,0 +1,74 @@
+{
+  "title": "A10-RPT Feasibility-Diagnostic Rocket-Propulsion Surrogate",
+  "status": "paper_companion_archive_v0_1",
+  "central_claim": "feasibility-diagnostic reduced-surrogate theory, not engine design or hardware control",
+  "table4": [
+    {
+      "controller": "A10 thermal v0.4",
+      "failure": 0.0,
+      "unsafe_duration": 0.0,
+      "cvar0_9_V": 0.0,
+      "mean_I_1": 1.174129,
+      "worst_h": 0.966376,
+      "worst_m": 0.260027
+    }
+  ],
+  "table5": [
+    {
+      "profile": "combined_moderate",
+      "controller": "A10 minimax v0.7",
+      "C": 1.0,
+      "S": 1.55,
+      "Is": 1.0,
+      "failure": 0.0,
+      "unsafe": 0.0,
+      "worst_h": 0.975344,
+      "worst_m": 0.20077
+    },
+    {
+      "profile": "heat_150",
+      "controller": "A10 minimax v0.7",
+      "C": 2.5,
+      "S": 1.2,
+      "Is": 1.0,
+      "failure": 0.0067,
+      "unsafe": 0.0015,
+      "worst_h": 1.008569,
+      "worst_m": 0.195385
+    },
+    {
+      "profile": "combined_harsh",
+      "controller": "A10 minimax v0.7",
+      "C": 2.5,
+      "S": 1.75,
+      "Is": 1.1,
+      "failure": 0.075,
+      "unsafe": 0.0154,
+      "worst_h": 1.043346,
+      "worst_m": 0.22389
+    }
+  ],
+  "table6": [
+    {
+      "class": "I",
+      "regime": "nominal, growth, supply, noise",
+      "interpretation": "Controller-feasible under suitable A10 barrier variants."
+    },
+    {
+      "class": "II",
+      "regime": "combined_moderate",
+      "interpretation": "Supply-resource-frontier feasible; recommended surrogate condition S≈1.55."
+    },
+    {
+      "class": "III",
+      "regime": "heat_150",
+      "interpretation": "High-cooling near-feasible thermal frontier; rare residual thermal exceedance remains near C≈2.50."
+    },
+    {
+      "class": "IV",
+      "regime": "combined_harsh",
+      "interpretation": "Severe thermal-limited near-frontier under the tested family; unresolved at target failure rate 0.05."
+    }
+  ],
+  "claim_boundary": "No engine-design, propulsion-performance prediction, flight hardware, hazardous experiment, or safety certification claim."
+}

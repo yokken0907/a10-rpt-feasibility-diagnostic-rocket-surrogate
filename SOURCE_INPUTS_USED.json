@@ -1,0 +1,18 @@
+{
+  "created_utc": "2026-05-06T15:36:55.531840+00:00",
+  "source_zip": {
+    "name": "a10_rpt_phase1_selected.zip",
+    "sha256": "58ad8b1129c635bb7768f536f45da2df0bb6dab8f5d8f1906b9af4ce5127494b",
+    "size_bytes": 317273705
+  },
+  "paper_pdf": {
+    "name": "A10_RPT_Phase1_Mission_Variable_Preserving_Structured_Priors(9).pdf",
+    "sha256": "354d8c0ec04c70c91f1f7416b81ffb9811f91041850d9a46a2dd76f2474c5521",
+    "size_bytes": 634113
+  },
+  "selected_file_count": 153,
+  "deferred_file_count": 15307,
+  "large_raw_csv_count": 8,
+  "included_png_count": 91,
+  "included_small_csv_count": 34
+}

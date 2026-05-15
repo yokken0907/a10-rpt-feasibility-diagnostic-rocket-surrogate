@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+title: "A10-RPT Feasibility-Diagnostic Rocket-Propulsion Surrogate"
+message: "If you use these materials, please cite the corresponding manuscript."
+type: dataset
+authors:
+  - family-names: Yoshimura
+    given-names: Keiji
+    affiliation: Independent Researcher
+abstract: "Paper companion archive for an AI-assisted independent research manuscript on A10-RPT, a nondimensional reduced-surrogate feasibility-diagnostic control framework for rocket-propulsion surrogates under thermal, supply, and combined stress."
+repository-code: "https://github.com/yokken0907/a10-rpt-feasibility-diagnostic-rocket-surrogate"
+date-released: "2026-05-07"
+version: "0.1.1-public-gate"
+license: "LicenseRef-Evaluation-Only"
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Yoshimura
+      given-names: Keiji
+      affiliation: Independent Researcher
+  title: "A10-RPT: Mission-Variable-Preserving Structured Priors for Rocket-Propulsion Surrogates under Thermal, Supply, and Combined Stress"
+  year: 2026
+  # doi: to be assigned after Zenodo archival
