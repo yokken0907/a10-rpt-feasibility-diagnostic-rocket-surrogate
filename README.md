@@ -30,9 +30,9 @@ For technically interested first-time readers, this repository includes a browse
 
 `docs/technical_visual_orientation/index.html`
 
-This page provides a structured overview of A10-RPT, including the project mission variable, reduced-model or surrogate status, structured-prior / constrained-evaluation logic, uncertainty and stress discipline where applicable, evidence hierarchy, recommended repository reading order, and the claim boundary.
+This page provides a structured overview of the A10-RPT reduced rocket-surrogate logic, including the mission-variable-preserving diagnostic posture, reduced nondimensional surrogate status, thermal / supply-margin / growth-rate stress channels, combined-stress interpretation, evidence hierarchy, repository reading order, and the claim boundary.
 
-The page is intended only as an orientation aid. It does not execute simulations, does not validate the project, does not certify deployment readiness, and does not replace the manuscript, source/configuration materials, supporting archive materials, or independent expert review.
+The page is intended only as an orientation aid. It does not run propulsion simulations, does not validate a rocket engine, does not provide engine design or construction instructions, does not certify flight hardware, and does not replace the manuscript, source materials, figures, or independent expert review.
 
 ## What this repository contains
 
