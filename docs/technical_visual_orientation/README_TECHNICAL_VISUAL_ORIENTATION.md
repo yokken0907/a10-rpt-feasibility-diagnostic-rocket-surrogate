@@ -10,28 +10,32 @@ docs/technical_visual_orientation/index.html
 
 ## Purpose
 
-This page gives technically interested first-time readers a compact visual map of the repository before they read the manuscript, figures, source materials, and claim-boundary documents.
+This page gives technically interested first-time readers a compact, RPT-specific visual map of the repository before they read the manuscript, figures, source materials, and claim-boundary documents.
 
 It summarizes:
 
-- the mission-variable-preserving diagnostic posture,
-- the reduced nondimensional surrogate status,
-- thermal / supply-margin / growth-rate stress channels,
-- combined-stress interpretation,
-- structured-prior diagnostic logic,
+- the RPT-specific mission variable,
+- chamber-pressure and pressure-oscillation surrogate states,
+- thermal-load and supply-margin stress channels,
+- cumulative-impulse proxy interpretation,
+- combined-stress regime classification,
+- controller-feasible / resource-frontier / architecture-limited distinctions,
 - evidence hierarchy,
 - repository reading order,
-- explicit non-claims.
+- explicit engine / flight / hazardous-use non-claims.
+
+All graph sections include replay controls so the reader can step through the visual logic interactively.
 
 ## Non-claims
 
 This page does not claim:
 
-- flight hardware readiness,
 - engine design or construction instructions,
-- propulsion performance guarantee,
-- combustion or CFD solver validation,
-- safety-certified control,
+- propellant handling or hazardous experiment guidance,
+- flight hardware readiness,
+- real propulsion-performance prediction,
+- validated aerospace safety or controller certification,
+- combustion / CFD solver validation,
 - experimental rocket validation,
 - commercial deployment readiness.
 
