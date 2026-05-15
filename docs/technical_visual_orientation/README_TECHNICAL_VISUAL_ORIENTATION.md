@@ -1,6 +1,6 @@
-# A10-RPT Feasibility-Diagnostic Rocket-Propulsion Surrogate — Technical Visual Orientation
+# A10-RPT Reduced Rocket Surrogate — Technical Visual Orientation
 
-This folder contains a browser-only technical visual orientation page for the `A10-RPT` repository.
+This folder contains a browser-only technical visual orientation page for the `a10-rpt-feasibility-diagnostic-rocket-surrogate` repository.
 
 Open:
 
@@ -10,14 +10,15 @@ docs/technical_visual_orientation/index.html
 
 ## Purpose
 
-This page gives technically interested first-time readers a compact visual map of the repository before they read the manuscript, source/configuration materials, claim-boundary documents, and supporting archive materials.
+This page gives technically interested first-time readers a compact visual map of the repository before they read the manuscript, figures, source materials, and claim-boundary documents.
 
 It summarizes:
 
-- the project mission variable,
-- the reduced-model or surrogate status,
-- structured-prior / constrained-evaluation logic,
-- uncertainty, stress, and tail-risk discipline where applicable,
+- the mission-variable-preserving diagnostic posture,
+- the reduced nondimensional surrogate status,
+- thermal / supply-margin / growth-rate stress channels,
+- combined-stress interpretation,
+- structured-prior diagnostic logic,
 - evidence hierarchy,
 - repository reading order,
 - explicit non-claims.
@@ -26,10 +27,12 @@ It summarizes:
 
 This page does not claim:
 
-- Flight hardware claim
-- Engine design instructions
-- Propulsion performance guarantee
-- Safety-certified controller
-- Experimental rocket validation
+- flight hardware readiness,
+- engine design or construction instructions,
+- propulsion performance guarantee,
+- combustion or CFD solver validation,
+- safety-certified control,
+- experimental rocket validation,
+- commercial deployment readiness.
 
-It is an orientation aid only and must not be cited as numerical, experimental, clinical, industrial, or deployment evidence.
+It is an orientation aid only and must not be cited as numerical, experimental, safety, or engineering-validation evidence.

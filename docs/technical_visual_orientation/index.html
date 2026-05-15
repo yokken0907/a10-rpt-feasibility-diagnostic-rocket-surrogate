@@ -3,57 +3,103 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>A10-RPT Feasibility-Diagnostic Rocket-Propulsion Surrogate — Technical Visual Orientation</title>
+<title>A10-RPT Reduced Rocket Surrogate — Technical Visual Orientation</title>
 <style>
-:root{--bg:#f5f6f8;--panel:#fff;--ink:#161a22;--muted:#5d6675;--line:#d9dee8;--soft:#f0f3f8;--blue:#2f56d8;--violet:#7b45c8;--green:#1f7a4d;--orange:#a05a16;--red:#9b2f2f;--shadow:0 18px 46px rgba(20,30,50,.10);--radius:22px}
-*{box-sizing:border-box}body{margin:0;background:linear-gradient(135deg,#f8f9fb 0,#f1f3f7 45%,#e9edf5 100%);color:var(--ink);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.58}
-header,main{max-width:1240px;margin:auto;padding:22px}.hero{background:rgba(255,255,255,.9);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:30px}
-h1{font-size:clamp(27px,4vw,45px);line-height:1.12;margin:0 0 10px;letter-spacing:-.035em}h2{font-size:clamp(21px,3vw,31px);margin:0 0 14px;letter-spacing:-.025em}h3{font-size:18px;margin:18px 0 8px}
-p{margin:0 0 12px}.muted{color:var(--muted)}code{background:#edf1f7;border:1px solid #dce2ec;border-radius:7px;padding:1px 6px}
-.badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}.badge{background:var(--soft);border:1px solid var(--line);border-radius:999px;padding:7px 11px;font-size:13px;color:#303747}
-.layout{display:grid;grid-template-columns:315px 1fr;gap:18px;align-items:start}nav{position:sticky;top:16px;background:rgba(255,255,255,.91);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:12px}
-.navbtn{display:flex;gap:10px;align-items:flex-start;border:0;background:transparent;width:100%;text-align:left;padding:12px;border-radius:16px;cursor:pointer;color:var(--ink);font-size:14px}.navbtn:hover{background:#f0f3f8}.navbtn.active{background:#eaf0ff;color:#18389f;font-weight:800}
+:root{
+  --bg:#f5f6f8; --panel:#ffffff; --ink:#161a22; --muted:#5d6675;
+  --line:#d9dee8; --soft:#f0f3f8; --blue:#2f56d8; --violet:#7b45c8;
+  --green:#1f7a4d; --orange:#a05a16; --red:#9b2f2f; --shadow:0 18px 46px rgba(20,30,50,.10);
+  --radius:22px;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:linear-gradient(135deg,#f8f9fb 0,#f1f3f7 45%,#e9edf5 100%);
+  color:var(--ink);
+  font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  line-height:1.58;
+}
+header,main{max-width:1240px;margin:auto;padding:22px}
+.hero{
+  background:rgba(255,255,255,.9);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  padding:30px;
+}
+h1{font-size:clamp(27px,4vw,45px);line-height:1.12;margin:0 0 10px;letter-spacing:-.035em}
+h2{font-size:clamp(21px,3vw,31px);margin:0 0 14px;letter-spacing:-.025em}
+h3{font-size:18px;margin:18px 0 8px}
+p{margin:0 0 12px}.muted{color:var(--muted)}
+code{background:#edf1f7;border:1px solid #dce2ec;border-radius:7px;padding:1px 6px}
+.badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.badge{background:var(--soft);border:1px solid var(--line);border-radius:999px;padding:7px 11px;font-size:13px;color:#303747}
+.layout{display:grid;grid-template-columns:320px 1fr;gap:18px;align-items:start}
+nav{
+  position:sticky;top:16px;background:rgba(255,255,255,.91);border:1px solid var(--line);
+  border-radius:var(--radius);box-shadow:var(--shadow);padding:12px;
+}
+.navbtn{
+  display:flex;gap:10px;align-items:flex-start;border:0;background:transparent;width:100%;
+  text-align:left;padding:12px;border-radius:16px;cursor:pointer;color:var(--ink);font-size:14px;
+}
+.navbtn:hover{background:#f0f3f8}.navbtn.active{background:#eaf0ff;color:#18389f;font-weight:800}
 .navnum{min-width:28px;height:28px;border-radius:50%;display:inline-flex;justify-content:center;align-items:center;background:#fff;border:1px solid var(--line);font-weight:800}
-.card{background:rgba(255,255,255,.94);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:24px;min-height:740px}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-.note{background:#f7f9fc;border:1px solid var(--line);border-radius:18px;padding:15px}.note.green{background:#effaf4;border-color:#b9dfca;color:#153d28}.note.warn{background:#fff7ec;border-color:#edcfaa;color:#573508}.note.red{background:#fff1f1;border-color:#e8baba;color:#6b2222}
-canvas{width:100%;min-height:320px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(180deg,#fff,#fbfcff);display:block}.controls{display:flex;flex-wrap:wrap;gap:9px;margin:14px 0}
-button.action{border:0;border-radius:14px;padding:10px 13px;cursor:pointer;font-weight:800;background:var(--blue);color:#fff;box-shadow:0 8px 18px rgba(47,86,216,.23)}button.secondary{border:1px solid var(--line);border-radius:14px;padding:10px 13px;cursor:pointer;font-weight:800;background:#eef2f7;color:#303747}
+.card{background:rgba(255,255,255,.94);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:24px;min-height:760px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.note{background:#f7f9fc;border:1px solid var(--line);border-radius:18px;padding:15px}
+.note.green{background:#effaf4;border-color:#b9dfca;color:#153d28}
+.note.warn{background:#fff7ec;border-color:#edcfaa;color:#573508}
+.note.red{background:#fff1f1;border-color:#e8baba;color:#6b2222}
+canvas{width:100%;min-height:330px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(180deg,#fff,#fbfcff);display:block}
+.controls{display:flex;flex-wrap:wrap;gap:9px;margin:14px 0}
+button.action{border:0;border-radius:14px;padding:10px 13px;cursor:pointer;font-weight:800;background:var(--blue);color:#fff;box-shadow:0 8px 18px rgba(47,86,216,.23)}
+button.secondary{border:1px solid var(--line);border-radius:14px;padding:10px 13px;cursor:pointer;font-weight:800;background:#eef2f7;color:#303747}
 .kpi{background:#f7f9fc;border:1px solid var(--line);border-radius:16px;padding:14px}.kpi .label{font-size:12px;color:var(--muted)}.kpi .val{font-size:20px;font-weight:900}
-table{width:100%;border-collapse:collapse;margin:10px 0 0;font-size:14px}th,td{border-bottom:1px solid var(--line);padding:10px;text-align:left;vertical-align:top}th{background:#f5f7fb;color:#303747}.hidden{display:none}.small{font-size:13px;color:var(--muted)}
-.step{display:flex;gap:10px;align-items:flex-start;margin:9px 0;padding:12px;border:1px solid var(--line);border-radius:16px;background:#f8f9fc}.step .dot{min-width:16px;height:16px;border-radius:50%;background:#c7ceda;margin-top:4px}.step.active{border-color:#8ca1ff;background:#edf2ff}.step.active .dot{background:var(--blue)}
-.footerlinks{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}a{color:#2349ca;text-decoration:none;font-weight:800}a:hover{text-decoration:underline}@media(max-width:920px){.layout,.grid2,.grid3{grid-template-columns:1fr}nav{position:relative;top:auto}}
+table{width:100%;border-collapse:collapse;margin:10px 0 0;font-size:14px}
+th,td{border-bottom:1px solid var(--line);padding:10px;text-align:left;vertical-align:top}
+th{background:#f5f7fb;color:#303747}.hidden{display:none}.small{font-size:13px;color:var(--muted)}
+.step{display:flex;gap:10px;align-items:flex-start;margin:9px 0;padding:12px;border:1px solid var(--line);border-radius:16px;background:#f8f9fc}
+.step .dot{min-width:16px;height:16px;border-radius:50%;background:#c7ceda;margin-top:4px}
+.step.active{border-color:#8ca1ff;background:#edf2ff}.step.active .dot{background:var(--blue)}
+.footerlinks{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}
+a{color:#2349ca;text-decoration:none;font-weight:800}a:hover{text-decoration:underline}
+@media(max-width:920px){.layout,.grid2,.grid3{grid-template-columns:1fr}nav{position:relative;top:auto}}
 </style>
 </head>
 <body>
 <header>
 <section class="hero">
-<h1>A10-RPT Feasibility-Diagnostic Rocket-Propulsion Surrogate<br>Technical Visual Orientation</h1>
+<h1>A10-RPT Reduced Rocket Surrogate<br>Technical Visual Orientation</h1>
 <p class="muted">
-This page is a repository-facing technical orientation layer for <strong>A10-RPT</strong>.
-It explains the project logic, reduced-model status, evidence hierarchy, recommended reading order, and claim boundary.
-It is not a validation dashboard, deployment claim, or substitute for the manuscript and repository evidence.
+This page is a repository-facing technical orientation layer for the A10-RPT reduced rocket-propulsion surrogate.
+It explains the mission-variable-preserving diagnostic logic, reduced nondimensional surrogate status,
+thermal/supply-margin/growth-rate stress structure, evidence hierarchy, and claim boundary.
+It is not an engine-design guide, not a flight-hardware claim, and not a propulsion safety document.
 </p>
 <div class="badges">
 <span class="badge">target: technically interested first-time readers</span>
-<span class="badge">rocket-propulsion reduced surrogate / feasibility diagnostic</span>
-<span class="badge">reduced / scoped archive</span>
-<span class="badge">evidence hierarchy</span>
+<span class="badge">rocket-propulsion surrogate</span>
+<span class="badge">mission-variable preservation</span>
+<span class="badge">thermal / supply / growth stress</span>
 <span class="badge">claim-boundary preserving</span>
 </div>
 </section>
 </header>
+
 <main>
 <div class="layout">
 <nav>
-<button class="navbtn active" data-section="reader"><span class="navnum">0</span><span>Reader level<br><small>orientation only</small></span></button>
+<button class="navbtn active" data-section="reader"><span class="navnum">0</span><span>Reader level<br><small>not engine design</small></span></button>
 <button class="navbtn" data-section="mission"><span class="navnum">1</span><span>Mission variable<br><small>what is preserved</small></span></button>
-<button class="navbtn" data-section="model"><span class="navnum">2</span><span>Reduced model<br><small>surrogate status</small></span></button>
-<button class="navbtn" data-section="prior"><span class="navnum">3</span><span>Structured prior<br><small>evaluation loop</small></span></button>
-<button class="navbtn" data-section="risk"><span class="navnum">4</span><span>Uncertainty / risk<br><small>stress and tails</small></span></button>
+<button class="navbtn" data-section="surrogate"><span class="navnum">2</span><span>Reduced surrogate<br><small>nondimensional model</small></span></button>
+<button class="navbtn" data-section="stress"><span class="navnum">3</span><span>Stress channels<br><small>thermal / supply / growth</small></span></button>
+<button class="navbtn" data-section="prior"><span class="navnum">4</span><span>Structured prior<br><small>diagnostic logic</small></span></button>
 <button class="navbtn" data-section="evidence"><span class="navnum">5</span><span>Evidence hierarchy<br><small>what carries weight</small></span></button>
 <button class="navbtn" data-section="repo"><span class="navnum">6</span><span>How to read repo<br><small>where to look first</small></span></button>
 <button class="navbtn" data-section="boundary"><span class="navnum">7</span><span>Claim boundary<br><small>non-claims</small></span></button>
 </nav>
+
 <section class="card">
 
 <div id="reader" class="section">
@@ -61,151 +107,291 @@ It is not a validation dashboard, deployment claim, or substitute for the manusc
 <div class="grid2">
 <div>
 <p>
-This page assumes the reader has at least some technical interest in the project domain, reduced modeling,
-control/optimization, reproducibility materials, or preprint companion archives.
+This page assumes the reader has technical interest in reduced modeling, propulsion-adjacent feasibility diagnostics,
+control/optimization, or reproducible engineering-style archives.
 </p>
-<p>A10-RPTの reduced rocket-propulsion surrogate、mission-variable preserving structured priors、thermal / supply / combined stress、claim boundary を整理する補助ページです。</p>
-<div class="note green"><strong>Correct use:</strong><br>Use this page as a visual map before reading the manuscript, source/configuration materials, and claim-boundary documents.</div>
+<p>
+The central point is not "a new rocket engine." The repository presents a nondimensional reduced surrogate
+for mission-variable-preserving structured-prior diagnostics under thermal, supply-margin, disturbance, and combined-stress pathways.
+</p>
+<div class="note green">
+<strong>Correct use:</strong><br>
+Use this page as a visual map before reading the manuscript, claim-boundary documents, figures, and reproducibility materials.
 </div>
-<div><canvas id="readerCanvas" width="640" height="400"></canvas><p class="small">Conceptual orientation only. No simulation or validation is executed in this HTML.</p></div>
+</div>
+<div>
+<canvas id="readerCanvas" width="640" height="420"></canvas>
+<p class="small">Conceptual orientation only. No propulsion simulation is executed in this HTML.</p>
+</div>
 </div>
 </div>
 
 <div id="mission" class="section hidden">
-<h2>1. Mission variable</h2>
-<p>Preserve a mission-variable-like performance target under thermal, supply-margin, growth-rate, disturbance, and combined-stress constraints.</p>
+<h2>1. Mission variable: preserve function before optimizing score</h2>
+<p>
+A10-RPT frames the problem around preserving a mission-variable-like performance target under coupled constraints,
+rather than claiming a deployable propulsion controller.
+</p>
 <div class="grid2">
-<div><canvas id="missionCanvas" width="640" height="430"></canvas></div>
+<div>
+<canvas id="missionCanvas" width="640" height="430"></canvas>
+</div>
 <div>
 <h3>Technical reading</h3>
-<ul>
-<li>The mission variable defines what must be preserved or achieved.</li>
-<li>Constraint boundaries define where a candidate stops being feasible.</li>
-<li>The project should be evaluated through the reported workflow, not through the visual page.</li>
-</ul>
-<div class="controls"><button class="action" onclick="drawMission()">show mission concept</button></div>
+<table>
+<tr><th>Quantity</th><th>Role</th></tr>
+<tr><td>Mission variable</td><td>Target behavior that should remain viable under stress.</td></tr>
+<tr><td>Thermal state</td><td>Constraint channel that can accumulate and dominate feasibility.</td></tr>
+<tr><td>Supply margin</td><td>Resource/actuation-like margin that can be depleted.</td></tr>
+<tr><td>Growth-rate / disturbance response</td><td>Diagnostic of instability or stress amplification.</td></tr>
+<tr><td>Combined stress</td><td>Where otherwise manageable channels may become severe together.</td></tr>
+</table>
+<div class="controls">
+<button class="action" onclick="animateMission()">show mission envelope</button>
+<button class="secondary" onclick="drawMission(1)">static</button>
+</div>
 </div>
 </div>
 </div>
 
-<div id="model" class="section hidden">
-<h2>2. Reduced model / surrogate status</h2>
-<p>A nondimensional reduced-surrogate control study, not an engine design or propulsion mechanism.</p>
+<div id="surrogate" class="section hidden">
+<h2>2. Reduced nondimensional surrogate</h2>
+<p>
+The repository should be read as a reduced-surrogate feasibility-diagnostic archive.
+It is not an engine geometry, injector design, combustion solver, flight code, or hardware package.
+</p>
 <div class="grid2">
-<div><canvas id="modelCanvas" width="640" height="430"></canvas></div>
 <div>
-<h3>Why this matters</h3>
+<canvas id="surrogateCanvas" width="640" height="430"></canvas>
+</div>
+<div>
+<h3>Reduced-model reading</h3>
 <ul>
-<li>A reduced surrogate can make a constrained problem inspectable.</li>
-<li>Surrogate evidence must not be promoted into deployment or experimental validation.</li>
-<li>Expert review and independent reproduction remain separate requirements.</li>
+<li>The surrogate organizes diagnostic channels, not full propulsion physics.</li>
+<li>Nondimensional variables make stress interactions inspectable.</li>
+<li>The value is in structured comparison and claim-bounded feasibility screening.</li>
+<li>Experimental engine validation and safety analysis are outside scope.</li>
+</ul>
+<div class="note warn">
+<strong>Important:</strong> Do not translate the visual diagram into construction, operation, or safety guidance.
+</div>
+</div>
+</div>
+</div>
+
+<div id="stress" class="section hidden">
+<h2>3. Stress channels: thermal, supply margin, growth response</h2>
+<p>
+The A10-RPT diagnostic logic is strongest when viewed as a coupled-stress map.
+Single-channel survival is not the same as combined-stress feasibility.
+</p>
+<div class="grid3">
+<div class="kpi"><div class="label">thermal channel</div><div class="val">accumulation</div></div>
+<div class="kpi"><div class="label">supply channel</div><div class="val">margin loss</div></div>
+<div class="kpi"><div class="label">growth response</div><div class="val">instability risk</div></div>
+</div>
+<div class="grid2">
+<div>
+<canvas id="stressCanvas" width="640" height="430"></canvas>
+</div>
+<div class="note">
+<h3>Diagnostic interpretation</h3>
+<ul>
+<li>Thermal and supply limits can interact nonlinearly.</li>
+<li>Growth-rate stress can reveal sensitivity even when nominal traces look acceptable.</li>
+<li>Combined stress is where the claim boundary matters most.</li>
 </ul>
 </div>
 </div>
 </div>
 
 <div id="prior" class="section hidden">
-<h2>3. Structured prior / evaluation loop</h2>
-<p>Structured-prior control restricts candidate behavior to interpretable, feasibility-first responses under coupled stress.</p>
+<h2>4. Structured-prior diagnostic loop</h2>
+<p>
+A10-RPT uses structured-prior logic to restrict the diagnostic search family and expose failure boundaries,
+rather than to claim universal optimality.
+</p>
 <div class="grid2">
 <div>
-<div id="step0" class="step active"><span class="dot"></span><span><strong>1. Mission</strong><br><small>Define what must be preserved.</small></span></div>
-<div id="step1" class="step"><span class="dot"></span><span><strong>2. Limits</strong><br><small>Define failure and infeasibility boundaries.</small></span></div>
-<div id="step2" class="step"><span class="dot"></span><span><strong>3. Surrogate</strong><br><small>Use an auditable reduced model.</small></span></div>
-<div id="step3" class="step"><span class="dot"></span><span><strong>4. Prior / gate</strong><br><small>Restrict the search family.</small></span></div>
-<div id="step4" class="step"><span class="dot"></span><span><strong>5. Stress test</strong><br><small>Inspect robustness and failure modes.</small></span></div>
-<div id="step5" class="step"><span class="dot"></span><span><strong>6. Non-claims</strong><br><small>Freeze the claim boundary.</small></span></div>
-<div class="controls"><button class="action" onclick="animatePrior()">step through logic</button><button class="secondary" onclick="resetPrior()">reset</button></div>
+<div id="step0" class="step active"><span class="dot"></span><span><strong>1. Mission</strong><br><small>Define what must remain viable.</small></span></div>
+<div id="step1" class="step"><span class="dot"></span><span><strong>2. Reduced surrogate</strong><br><small>Use an inspectable nondimensional diagnostic model.</small></span></div>
+<div id="step2" class="step"><span class="dot"></span><span><strong>3. Stress channels</strong><br><small>Thermal, supply, growth, and combined stress.</small></span></div>
+<div id="step3" class="step"><span class="dot"></span><span><strong>4. Structured prior</strong><br><small>Restrict candidate responses.</small></span></div>
+<div id="step4" class="step"><span class="dot"></span><span><strong>5. Evidence hierarchy</strong><br><small>Separate paper evidence from orientation.</small></span></div>
+<div id="step5" class="step"><span class="dot"></span><span><strong>6. Claim boundary</strong><br><small>No flight, engine, or safety claim.</small></span></div>
+<div class="controls">
+<button class="action" onclick="animatePrior()">step through logic</button>
+<button class="secondary" onclick="resetPrior()">reset</button>
 </div>
-<div><canvas id="priorCanvas" width="640" height="430"></canvas></div>
 </div>
+<div>
+<canvas id="priorCanvas" width="640" height="430"></canvas>
 </div>
-
-<div id="risk" class="section hidden">
-<h2>4. Uncertainty / risk discipline</h2>
-<p>Combined thermal/supply/growth disturbances are treated as diagnostic stressors rather than deployment envelopes.</p>
-<div class="grid3">
-<div class="kpi"><div class="label">nominal result</div><div class="val">not enough</div></div>
-<div class="kpi"><div class="label">stress modes</div><div class="val">central</div></div>
-<div class="kpi"><div class="label">claim boundary</div><div class="val">required</div></div>
-</div>
-<div class="grid2">
-<div><canvas id="riskCanvas" width="640" height="430"></canvas></div>
-<div class="note warn"><h3>Practical interpretation</h3><ul><li>Failure boundaries should be inspected explicitly.</li><li>Tail behavior and unresolved cases should not be hidden.</li><li>Documentation clarity does not replace validation.</li></ul></div>
 </div>
 </div>
 
 <div id="evidence" class="section hidden">
 <h2>5. Evidence hierarchy</h2>
-<p>The repository contains several layers. They do not carry the same evidential strength.</p>
+<p>
+The repository contains several layers. They do not carry the same evidential strength.
+</p>
 <table>
 <tr><th>Layer</th><th>Status</th><th>How to treat it</th></tr>
-<tr><td>Manuscript and reported figures/tables</td><td>primary paper companion materials</td><td>Use for the stated project results.</td></tr>
-<tr><td>Source/configuration/materials archive</td><td>technical provenance</td><td>Use for auditability and reproducibility inspection.</td></tr>
-<tr><td>Claim boundary / limitations</td><td>scope-control layer</td><td>Use to prevent overclaiming.</td></tr>
+<tr><td>Manuscript and figures</td><td>primary paper companion materials</td><td>Use for reported reduced-surrogate claims.</td></tr>
+<tr><td>Source / reproducibility materials</td><td>technical provenance</td><td>Use for auditability and local reproduction attempts.</td></tr>
+<tr><td>Claim boundary / limitations</td><td>scope-control layer</td><td>Use to prevent engine, flight, or safety overclaiming.</td></tr>
 <tr><td>This visual page</td><td>orientation only</td><td>Do not cite as validation evidence.</td></tr>
 </table>
-<div class="note green"><strong>Allowed reading:</strong><ul><li>Reduced rocket-propulsion surrogate study</li>
-<li>Mission-variable-preserving structured-prior diagnostic</li>
-<li>Stress-response and feasibility-screening archive</li>
-<li>Paper companion materials for a pre-engineering concept</li></ul></div>
+<div class="note green">
+<strong>Best interpretation:</strong>
+A reduced rocket-propulsion surrogate for feasibility diagnostics and mission-variable-preserving structured-prior analysis.
+</div>
 </div>
 
 <div id="repo" class="section hidden">
 <h2>6. How to read the repository first</h2>
+<p>
+For a technically interested reader, the fastest route is to read the scope and non-claims before inspecting figures and source materials.
+</p>
 <div class="grid2">
 <div class="note">
 <h3>Suggested reading order</h3>
-<ol><li><code>README.md / README_ja.md</code></li>
+<ol>
+<li><code>README.md</code> / <code>README_ja.md</code></li>
 <li><code>CLAIM_BOUNDARY.md</code></li>
 <li><code>LIMITATIONS.md</code></li>
 <li><code>manuscript/</code></li>
 <li><code>figures/</code></li>
-<li><code>source_materials/ or validation materials</code></li>
-<li><code>docs/public_gate_0/</code></li></ol>
+<li><code>source_materials/</code> or reproducibility materials where present</li>
+<li><code>docs/public_gate_0/</code></li>
+</ol>
 </div>
 <div class="note">
 <h3>What not to expect</h3>
-<ul><li>Flight hardware claim</li>
-<li>Engine design instructions</li>
-<li>Propulsion performance guarantee</li>
-<li>Safety-certified controller</li>
-<li>Experimental rocket validation</li></ul>
+<ul>
+<li>No flight hardware claim.</li>
+<li>No engine design instructions.</li>
+<li>No combustion or CFD solver claim.</li>
+<li>No safety certification.</li>
+<li>No experimental rocket validation.</li>
+</ul>
 </div>
 </div>
-<div class="footerlinks"><a href="https://github.com/yokken0907/a10-rpt-reduced-rocket-surrogate" target="_blank" rel="noreferrer">GitHub repository</a>
-<a href="https://doi.org/10.5281/zenodo.20197294" target="_blank" rel="noreferrer">Zenodo DOI</a></div>
+<div class="footerlinks">
+<a href="https://github.com/yokken0907/a10-rpt-reduced-rocket-surrogate" target="_blank" rel="noreferrer">GitHub repository</a>
+<a href="https://doi.org/10.5281/zenodo.20197294" target="_blank" rel="noreferrer">Zenodo DOI</a>
+</div>
 </div>
 
 <div id="boundary" class="section hidden">
 <h2>7. Claim boundary</h2>
 <div class="grid2">
-<div class="note green"><h3>Allowed reading</h3><ul><li>Reduced rocket-propulsion surrogate study</li>
-<li>Mission-variable-preserving structured-prior diagnostic</li>
-<li>Stress-response and feasibility-screening archive</li>
-<li>Paper companion materials for a pre-engineering concept</li></ul></div>
-<div class="note red"><h3>Forbidden reading</h3><ul><li>Flight hardware claim</li>
-<li>Engine design instructions</li>
-<li>Propulsion performance guarantee</li>
-<li>Safety-certified controller</li>
-<li>Experimental rocket validation</li></ul></div>
+<div class="note green">
+<h3>Allowed reading</h3>
+<ul>
+<li>Reduced rocket-propulsion surrogate study.</li>
+<li>Mission-variable-preserving structured-prior diagnostic.</li>
+<li>Thermal / supply-margin / growth-rate stress visualization.</li>
+<li>Paper companion archive for a pre-engineering concept.</li>
+</ul>
 </div>
-<p class="muted">The purpose of this page is professional orientation: enough structure to reduce reader friction, without expanding the scientific or engineering claims.</p>
+<div class="note red">
+<h3>Forbidden reading</h3>
+<ul>
+<li>Flight hardware claim.</li>
+<li>Engine design or construction instructions.</li>
+<li>Propulsion performance guarantee.</li>
+<li>Combustion solver validation.</li>
+<li>Safety-certified controller.</li>
+<li>Experimental rocket validation.</li>
+</ul>
+</div>
+</div>
+<p class="muted">
+The purpose of this page is professional orientation: enough structure to reduce reader friction,
+without expanding the scientific or engineering claims.
+</p>
 </div>
 
 </section>
 </div>
 </main>
+
 <script>
-const sections=["reader","mission","model","prior","risk","evidence","repo","boundary"];
-document.querySelectorAll(".navbtn").forEach(btn=>btn.addEventListener("click",()=>{document.querySelectorAll(".navbtn").forEach(b=>b.classList.remove("active"));btn.classList.add("active");const id=btn.dataset.section;sections.forEach(s=>document.getElementById(s).classList.toggle("hidden",s!==id));setTimeout(redraw,20);}));
-function C(id){return document.getElementById(id).getContext("2d")}function clear(c){c.clearRect(0,0,c.canvas.width,c.canvas.height)}function text(c,s,x,y,size=14,color="#161a22",align="left",w="600"){c.fillStyle=color;c.font=`${w} ${size}px system-ui,sans-serif`;c.textAlign=align;c.fillText(s,x,y)}function line(c,x1,y1,x2,y2,color="#9aa4b5",w=2){c.strokeStyle=color;c.lineWidth=w;c.beginPath();c.moveTo(x1,y1);c.lineTo(x2,y2);c.stroke()}function dot(c,x,y,r,color){c.fillStyle=color;c.beginPath();c.arc(x,y,r,0,Math.PI*2);c.fill()}function rect(c,x,y,w,h,r,fill,stroke="#d9dee8"){c.fillStyle=fill;c.strokeStyle=stroke;c.lineWidth=1.5;c.beginPath();c.moveTo(x+r,y);c.arcTo(x+w,y,x+w,y+h,r);c.arcTo(x+w,y+h,x,y+h,r);c.arcTo(x,y+h,x,y,r);c.arcTo(x,y,x+w,y,r);c.closePath();c.fill();c.stroke()}function axes(c,x0,y0,w,h,xl,yl){line(c,x0,y0+h,x0+w,y0+h,"#7b8492",2);line(c,x0,y0,x0,y0+h,"#7b8492",2);text(c,xl,x0+w/2,y0+h+34,13,"#5d6675","center");text(c,yl,x0-38,y0+8,13,"#5d6675")}
-function drawReader(){const c=C("readerCanvas");clear(c);text(c,"Repository posture",320,34,20,"#161a22","center","850");const boxes=[["mission",95,125,"#eef3ff"],["reduced model",320,125,"#f1edff"],["evidence archive",545,125,"#effaf4"],["not deployment",170,270,"#fff7ec"],["not certification",470,270,"#fff1f1"]];boxes.forEach(b=>{rect(c,b[1]-90,b[2]-40,180,80,18,b[3]);text(c,b[0],b[1],b[2]+5,15,"#161a22","center","800")});[[185,125,230,125],[410,125,455,125],[230,160,180,232],[410,160,460,232]].forEach(a=>{line(c,a[0],a[1],a[2],a[3],"#2f56d8",3);dot(c,a[2],a[3],4,"#2f56d8")});text(c,"Technical orientation only; evidence lives in the manuscript and repository materials.",320,372,13,"#5d6675","center")}
-function drawMission(){const c=C("missionCanvas");clear(c);text(c,"Mission variable under constraints",320,30,20,"#161a22","center","850");axes(c,70,65,500,260,"workflow / scenario","margin / response");line(c,70,205,570,205,"#9b2f2f",2);text(c,"failure boundary",565,193,13,"#9b2f2f","right","850");c.beginPath();for(let i=0;i<=220;i++){let x=i/220;let y=0.28+0.22*Math.sin(x*7)+0.28*x;let px=70+x*500;let py=310-y*180;if(i===0)c.moveTo(px,py);else c.lineTo(px,py)}c.strokeStyle="#a05a16";c.lineWidth=3;c.stroke();c.beginPath();for(let i=0;i<=220;i++){let x=i/220;let y=0.36+0.08*Math.sin(x*8)+0.18*x;let px=70+x*500;let py=310-y*180;if(i===0)c.moveTo(px,py);else c.lineTo(px,py)}c.strokeStyle="#2f56d8";c.lineWidth=4;c.stroke();text(c,"unstructured / nominal-leaning",400,120,13,"#a05a16");text(c,"structured-prior target",360,250,13,"#2f56d8");text(c,"Goal: preserve the mission variable while avoiding hard-limit crossing.",320,392,13,"#5d6675","center")}
-function drawModel(){const c=C("modelCanvas");clear(c);text(c,"Reduced model / surrogate role",320,30,20,"#161a22","center","850");const nodes=[["inputs",95,125,"#eef3ff"],["reduced surrogate",320,125,"#f1edff"],["diagnostics",545,125,"#effaf4"],["uncertainty / stress",205,280,"#fff7ec"],["claim boundary",435,280,"#fff1f1"]];nodes.forEach(n=>{rect(c,n[1]-88,n[2]-38,176,76,18,n[3]);text(c,n[0],n[1],n[2]+5,14,"#161a22","center","800")});[[183,125,232,125],[408,125,457,125],[320,165,215,242],[320,165,425,242]].forEach(a=>{line(c,a[0],a[1],a[2],a[3],"#2f56d8",3);dot(c,a[2],a[3],4,"#2f56d8")});text(c,"A surrogate can be useful without being a deployment-ready physical system.",320,382,13,"#5d6675","center")}
-let priorTimer=null;function drawPrior(k=0){const c=C("priorCanvas");clear(c);text(c,"Structured-prior evaluation loop",320,30,19,"#161a22","center","850");const labels=["mission","limits","surrogate","prior/gate","stress test","non-claims"];const coords=[[110,135],[290,105],[470,135],[470,285],[290,315],[110,285]];for(let i=0;i<labels.length;i++){let [x,y]=coords[i],active=i<=k;rect(c,x-62,y-36,124,72,18,active?"#eaf0ff":"#f7f9fc",active?"#8098ff":"#d9dee8");text(c,labels[i],x,y+5,13,active?"#16389f":"#5d6675","center","800");let [nx,ny]=coords[(i+1)%labels.length];let sx=x+(nx-x)*.36,sy=y+(ny-y)*.36,ex=x+(nx-x)*.64,ey=y+(ny-y)*.64;line(c,sx,sy,ex,ey,active?"#2f56d8":"#c2c9d5",3);dot(c,ex,ey,4,active?"#2f56d8":"#c2c9d5")}}function animatePrior(){resetPrior();let k=0;priorTimer=setInterval(()=>{for(let i=0;i<6;i++)document.getElementById("step"+i).classList.toggle("active",i<=k);drawPrior(k);k++;if(k>=6){clearInterval(priorTimer);priorTimer=null}},760)}function resetPrior(){if(priorTimer)clearInterval(priorTimer);priorTimer=null;for(let i=0;i<6;i++)document.getElementById("step"+i).classList.toggle("active",i===0);drawPrior(0)}
-function drawRisk(){const c=C("riskCanvas");clear(c);text(c,"Uncertainty / tail-risk concept",320,30,20,"#161a22","center","850");axes(c,70,65,500,260,"scenario / stress severity","constraint margin");line(c,70,205,570,205,"#9b2f2f",2);text(c,"violation boundary",565,193,13,"#9b2f2f","right","850");c.beginPath();for(let i=0;i<=220;i++){let x=i/220;let y=0.20+0.22*Math.sin(x*8)+0.55*x;let px=70+x*500;let py=310-y*180;if(i===0)c.moveTo(px,py);else c.lineTo(px,py)}c.strokeStyle="#a05a16";c.lineWidth=3;c.stroke();c.beginPath();for(let i=0;i<=220;i++){let x=i/220;let y=0.30+0.10*Math.sin(x*7)+0.28*x;let px=70+x*500;let py=310-y*180;if(i===0)c.moveTo(px,py);else c.lineTo(px,py)}c.strokeStyle="#2f56d8";c.lineWidth=4;c.stroke();text(c,"nominal-first path",425,115,13,"#a05a16");text(c,"feasibility-first path",360,250,13,"#2f56d8");text(c,"Concept: tail behavior and failure modes matter, not only nominal curves.",320,392,13,"#5d6675","center")}
-function redraw(){drawReader();drawMission();drawModel();drawPrior(0);drawRisk()}window.addEventListener("resize",redraw);redraw();
+const sections=["reader","mission","surrogate","stress","prior","evidence","repo","boundary"];
+document.querySelectorAll(".navbtn").forEach(btn=>btn.addEventListener("click",()=>{
+ document.querySelectorAll(".navbtn").forEach(b=>b.classList.remove("active")); btn.classList.add("active");
+ const id=btn.dataset.section; sections.forEach(s=>document.getElementById(s).classList.toggle("hidden",s!==id)); setTimeout(redraw,20);
+}));
+function C(id){return document.getElementById(id).getContext("2d")} function clear(c){c.clearRect(0,0,c.canvas.width,c.canvas.height)}
+function text(c,s,x,y,size=14,color="#161a22",align="left",w="600"){c.fillStyle=color;c.font=`${w} ${size}px system-ui,sans-serif`;c.textAlign=align;c.fillText(s,x,y)}
+function line(c,x1,y1,x2,y2,color="#9aa4b5",w=2){c.strokeStyle=color;c.lineWidth=w;c.beginPath();c.moveTo(x1,y1);c.lineTo(x2,y2);c.stroke()}
+function dot(c,x,y,r,color){c.fillStyle=color;c.beginPath();c.arc(x,y,r,0,Math.PI*2);c.fill()}
+function rect(c,x,y,w,h,r,fill,stroke="#d9dee8"){c.fillStyle=fill;c.strokeStyle=stroke;c.lineWidth=1.5;c.beginPath();c.moveTo(x+r,y);c.arcTo(x+w,y,x+w,y+h,r);c.arcTo(x+w,y+h,x,y+h,r);c.arcTo(x,y+h,x,y,r);c.arcTo(x,y,x+w,y,r);c.closePath();c.fill();c.stroke()}
+function axes(c,x0,y0,w,h,xl,yl){line(c,x0,y0+h,x0+w,y0+h,"#7b8492",2);line(c,x0,y0,x0,y0+h,"#7b8492",2);text(c,xl,x0+w/2,y0+h+34,13,"#5d6675","center");text(c,yl,x0-38,y0+8,13,"#5d6675")}
+function drawReader(){
+ const c=C("readerCanvas");clear(c); text(c,"A10-RPT repository posture",320,34,20,"#161a22","center","850");
+ const boxes=[["mission variable",95,125,"#eef3ff"],["nondimensional surrogate",320,125,"#f1edff"],["stress diagnostics",545,125,"#effaf4"],["not engine design",170,275,"#fff7ec"],["not flight validation",470,275,"#fff1f1"]];
+ boxes.forEach(b=>{rect(c,b[1]-95,b[2]-40,190,80,18,b[3]);text(c,b[0],b[1],b[2]+5,14,"#161a22","center","800")});
+ [[190,125,225,125],[415,125,450,125],[230,160,180,237],[410,160,460,237]].forEach(a=>{line(c,a[0],a[1],a[2],a[3],"#2f56d8",3);dot(c,a[2],a[3],4,"#2f56d8")});
+ text(c,"A reduced feasibility-diagnostic archive, not a propulsion deployment package.",320,390,13,"#5d6675","center");
+}
+function drawMission(t=1){
+ const c=C("missionCanvas");clear(c); text(c,"Mission envelope under coupled stress",320,30,20,"#161a22","center","850");
+ axes(c,70,65,500,260,"scenario / stress progression","margin / response");
+ line(c,70,205,570,205,"#9b2f2f",2); text(c,"failure boundary",565,193,13,"#9b2f2f","right","850");
+ c.beginPath();
+ for(let i=0;i<=220;i++){let x=i/220;let y=0.30+0.12*Math.sin(x*8)+0.18*x;let px=70+x*500;let py=310-y*180*t;if(i===0)c.moveTo(px,py);else c.lineTo(px,py)}
+ c.strokeStyle="#2f56d8";c.lineWidth=4;c.stroke();
+ c.beginPath();
+ for(let i=0;i<=220;i++){let x=i/220;let y=0.18+0.20*Math.sin(x*7)+0.55*x;let px=70+x*500;let py=310-y*180*t;if(i===0)c.moveTo(px,py);else c.lineTo(px,py)}
+ c.strokeStyle="#a05a16";c.lineWidth=3;c.stroke();
+ text(c,"structured-prior target",355,252,13,"#2f56d8");
+ text(c,"stress-amplified trajectory",395,116,13,"#a05a16");
+ text(c,"Mission preservation is evaluated before deployment language is allowed.",320,392,13,"#5d6675","center");
+}
+function animateMission(){let f=0;const tm=setInterval(()=>{f+=.04;drawMission(Math.min(1,f));if(f>=1)clearInterval(tm)},28)}
+function drawSurrogate(){
+ const c=C("surrogateCanvas");clear(c); text(c,"Reduced nondimensional surrogate",320,30,20,"#161a22","center","850");
+ const nodes=[["control / stress inputs",95,125,"#eef3ff"],["RPT reduced surrogate",320,125,"#f1edff"],["diagnostic outputs",545,125,"#effaf4"],["thermal channel",185,280,"#fff7ec"],["supply margin",320,305,"#fff7ec"],["growth response",455,280,"#fff1f1"]];
+ nodes.forEach(n=>{rect(c,n[1]-82,n[2]-36,164,72,18,n[3]);text(c,n[0],n[1],n[2]+5,13,"#161a22","center","800")});
+ [[177,125,238,125],[402,125,463,125],[320,163,185,242],[320,163,320,267],[320,163,455,242]].forEach(a=>{line(c,a[0],a[1],a[2],a[3],"#2f56d8",3);dot(c,a[2],a[3],4,"#2f56d8")});
+ text(c,"The surrogate is for diagnostic visibility, not hardware specification.",320,392,13,"#5d6675","center");
+}
+function drawStress(){
+ const c=C("stressCanvas");clear(c); text(c,"Coupled-stress map",320,30,20,"#161a22","center","850");
+ axes(c,70,65,500,260,"stress channel mixture","severity");
+ const peaks=[
+   ["thermal",0.25,0.65,"#a05a16"],
+   ["supply",0.52,0.50,"#2f56d8"],
+   ["combined",0.75,0.88,"#9b2f2f"]
+ ];
+ peaks.forEach(p=>{
+   c.beginPath();
+   for(let i=0;i<=180;i++){let x=i/180;let y=Math.exp(-Math.pow((x-p[1])/.08,2)/2)*p[2];let px=70+x*500;let py=325-y*260;if(i===0)c.moveTo(px,py);else c.lineTo(px,py)}
+   c.strokeStyle=p[3];c.lineWidth=4;c.stroke(); text(c,p[0],70+p[1]*500,325-p[2]*260-12,13,p[3],"center","850");
+ });
+ text(c,"Combined-stress response is the diagnostic danger zone.",320,392,13,"#5d6675","center");
+}
+let priorTimer=null;
+function drawPrior(k=0){
+ const c=C("priorCanvas");clear(c); text(c,"A10-RPT diagnostic loop",320,30,19,"#161a22","center","850");
+ const labels=["mission","surrogate","stress","prior","evidence","boundary"];
+ const coords=[[110,135],[290,105],[470,135],[470,285],[290,315],[110,285]];
+ for(let i=0;i<labels.length;i++){
+   let [x,y]=coords[i], active=i<=k;
+   rect(c,x-62,y-36,124,72,18,active?"#eaf0ff":"#f7f9fc",active?"#8098ff":"#d9dee8");
+   text(c,labels[i],x,y+5,13,active?"#16389f":"#5d6675","center","800");
+   let [nx,ny]=coords[(i+1)%labels.length];
+   let sx=x+(nx-x)*.36, sy=y+(ny-y)*.36, ex=x+(nx-x)*.64, ey=y+(ny-y)*.64;
+   line(c,sx,sy,ex,ey,active?"#2f56d8":"#c2c9d5",3); dot(c,ex,ey,4,active?"#2f56d8":"#c2c9d5");
+ }
+ text(c,"Structured-prior diagnostics expose failure boundaries without claiming deployment.",320,392,13,"#5d6675","center");
+}
+function animatePrior(){resetPrior();let k=0;priorTimer=setInterval(()=>{for(let i=0;i<6;i++)document.getElementById("step"+i).classList.toggle("active",i<=k);drawPrior(k);k++;if(k>=6){clearInterval(priorTimer);priorTimer=null}},780)}
+function resetPrior(){if(priorTimer)clearInterval(priorTimer);priorTimer=null;for(let i=0;i<6;i++)document.getElementById("step"+i).classList.toggle("active",i===0);drawPrior(0)}
+function redraw(){drawReader();drawMission(1);drawSurrogate();drawStress();drawPrior(0)}
+window.addEventListener("resize",redraw); redraw();
 </script>
 </body>
 </html>
